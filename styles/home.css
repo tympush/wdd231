@@ -4,7 +4,7 @@ h1, footer p{
     font-family: Dosis;
 }
 
-nav a{
+nav a, #citySection p{
     font-family: Quicksand;
 }
 
