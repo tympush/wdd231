@@ -122,4 +122,12 @@ function filterCourses(filter) {
     displayCourses(filteredCourses);
 }
 
+document.querySelectorAll('.filter-links a').forEach(link => {
+    link.addEventListener('click', function(event) {
+        event.preventDefault();
+        const filter = this.getAttribute('data-filter');
+        filterCourses(filter);
+    });
+});
+
 filterCourses('all');

@@ -8,7 +8,7 @@ nav a, #citySection p{
     font-family: Quicksand;
 }
 
-h2{
+h2, .filter-links a, #courses{
     font-family: "Archivo Black";
 }
 
@@ -109,6 +109,39 @@ h2{
 
 #certificateSection{
     grid-column: 1/3;
+}
+
+.filter-links{
+    padding: 10px;
+    padding-bottom: 15px;
+    margin-left: 3%;
+    margin-right: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid lightgrey;
+}
+
+.filter-links a{
+    background-color: black;
+    text-decoration: none;
+    font-size: 24px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    width: 160px;
+    text-align: center;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.filter-links a:hover{
+    color: yellow;
+    transform: scale(1.1);
+}
+
+.filter-links a:active {
+    color: lightblue;
+    transition: none;
 }
 
 footer{
