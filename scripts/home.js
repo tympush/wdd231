@@ -131,3 +131,18 @@ document.querySelectorAll('.filter-links a').forEach(link => {
 });
 
 filterCourses('all');
+
+
+
+const creditTotalElement = document.getElementById('creditTotal');
+const creditLeftElement = document.getElementById('creditLeft');
+
+const totalCredits = courses
+.reduce((sum, course) => sum + course.credits, 0);
+
+const creditsLeft = courses
+.filter(course => !course.completed)
+.reduce((sum, course) => sum + course.credits, 0);
+
+creditTotalElement.textContent = totalCredits;
+creditLeftElement.textContent = creditsLeft;

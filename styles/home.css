@@ -4,7 +4,7 @@ h1, footer p{
     font-family: Dosis;
 }
 
-nav a, #citySection p{
+nav a, #citySection p, .credits{
     font-family: Quicksand;
 }
 
@@ -104,6 +104,11 @@ h2{
 }
 
 #citySection p{
+    color: grey;
+}
+
+.credits{
+    text-align: center;
     color: grey;
 }
 
