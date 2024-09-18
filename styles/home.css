@@ -144,6 +144,34 @@ h2{
     transition: none;
 }
 
+#courses {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    padding: 20px;
+}
+
+.course {
+    font-size: 28px;
+    width: 500px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 20px;
+}
+
+.completed{
+    background-color: #80091B;
+    color: white;
+}
+
+.incomplete{
+    background-color: lightgrey;
+    color: black;
+}
+
 footer{
     background: var(--background-gradient);
     padding: 20px;
