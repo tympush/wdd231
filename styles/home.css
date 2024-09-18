@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Dosis:wght@200..800&family=Quicksand:wght@300..700&display=swap');
 
-h1, footer p{
+h1, footer p, #menu{
     font-family: Dosis;
 }
 
@@ -15,6 +15,42 @@ h2, .filter-links a, #courses{
 :root{
     --background-gradient: linear-gradient(to right, purple, #36013F, #36013F, #36013F, #80091B);
     --text-gradient: linear-gradient(to right, orange, yellow, yellow, orange);
+}
+
+@media screen and (max-width: 1150px) {
+
+    #menu::before{
+        content: "☰";
+        position: absolute;
+        right: 10px;
+    }
+    
+    #menu.show::before{
+        content: "X";
+    }
+
+    nav.navigation a{
+        display: none;
+    }
+
+    nav.show{
+        padding-bottom: 20px;
+        padding-top: 20px;
+        grid-row: 1/2;
+        grid-row: 1/2;
+    }
+
+    nav.show a{
+        display: block;
+    }
+}
+
+@media screen and (min-width: 1150px) {
+
+    nav{
+        display: flex;
+        justify-content: space-around;
+    }
 }
 
 h1, h2, a{
@@ -42,8 +78,6 @@ h1{
 
 nav{
     background-color: black;
-    display: flex;
-    justify-content: space-around;
     padding: 20px;
 }
 
@@ -94,13 +128,18 @@ h2{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 40px;
+    margin-top: 20px;
     margin-bottom: 20px;
 }
 
 #citySection img{
-    width: 400px;
+    box-sizing: border-box;
+    max-width: 100%;
+    width: 100%;
+    max-width: 400px;
     height: auto;
+    margin: 0 auto;
+    padding: 20px;
 }
 
 #citySection p{
@@ -161,7 +200,7 @@ h2{
 
 .course {
     font-size: 28px;
-    width: 500px;
+    width: 450px;
     border-radius: 10px;
     text-align: center;
     margin: 20px;
