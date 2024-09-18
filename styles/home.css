@@ -1,5 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Dosis:wght@200..800&family=Quicksand:wght@300..700&display=swap');
+
+h1, footer p{
+    font-family: Dosis;
+}
+
+nav a{
+    font-family: Quicksand;
+}
+
+h2{
+    font-family: "Archivo Black";
+}
+
 :root{
-    --magic-gradient: linear-gradient(to right, pink, purple, purple, purple, red);
+    --background-gradient: linear-gradient(to right, purple, #36013F, #36013F, #36013F, #80091B);
+    --text-gradient: linear-gradient(to right, orange, yellow, yellow, orange);
 }
 
 h1, h2, a{
@@ -7,7 +22,7 @@ h1, h2, a{
 }
 
 header div{
-    background: var(--magic-gradient);
+    background: var(--background-gradient);
     padding: 25px;
     display: flex;
     justify-content: center;
@@ -18,7 +33,7 @@ header img{
     width: 100px;
     height: auto;
     margin-right: 30px;
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.8);
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 1.2);
 }
 
 h1{
@@ -32,13 +47,17 @@ nav{
     padding: 20px;
 }
 
-nav a:hover {
-    color: rgb(255, 255, 100);
-}
-
 nav a{
     text-decoration: none;
     font-size: 32px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+    background: var(--text-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transform: scale(1.2);
 }
 
 main{
@@ -49,12 +68,12 @@ main{
 
 section{
     border-radius: 10px;
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.8);
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 1.2);
     margin: 20px;
 }
 
 h2{
-    background: var(--magic-gradient);
+    background: var(--background-gradient);
     text-align: center;
     font-size: 32px;
     padding: 20px;
@@ -93,10 +112,31 @@ h2{
 }
 
 footer{
-    background: var(--magic-gradient);
+    background: var(--background-gradient);
+    padding: 20px;
+}
+
+footer div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#info{
+    color: white;
+    font-size: 24px;
 }
 
 footer img{
     width: 50px;
     height: auto;
+    margin-left: 20px;
+}
+
+#lastModified{
+    background: var(--text-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    font-size: 20px;
 }
