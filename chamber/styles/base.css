@@ -1,0 +1,46 @@
+h1{
+    font-family: "Noto Serif Old Uyghur";
+}
+
+a{
+    font-family: Rokkitt;
+}
+
+p{
+    font-family: Montserrat;
+}
+
+header{
+    margin: 0;
+}
+
+#topbar{
+    background-color: #968383;
+    display: flex;
+}
+
+#logo{
+    width: 100px;
+    height: auto;
+    margin: 20px;
+}
+
+#title h1{
+    font-size: 32px;
+    margin-bottom: 0;
+}
+
+#title p{
+    font-size: 16px;
+    margin-top: 0;
+}
+
+.navigation{
+    margin-left: auto;
+    align-self: flex-end;
+    display: flex;
+}
+
+.navigation a{
+    margin: 10px;
+}
