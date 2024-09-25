@@ -10,14 +10,16 @@
     <meta property="og:type" content="website" />
     <meta property="og:image" content="" />
     <meta property="og:url" content="" />
-    <!--<link rel="stylesheet" href="styles/normalize.css">-->
+    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Serif+Old+Uyghur&family=Rokkitt:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <div id="topbar">
-            <img id="logo" src="images/logo.webp" alt="ghent logo">
+            <a id="logo" href="index.html">
+                <img src="images/logo.webp" alt="ghent logo">
+            </a>
 
             <div id="title">
                 <h1>Ghent</h1>
@@ -26,13 +28,17 @@
 
             <nav class="navigation">
                 <a href="index.html">Home</a>
-                <a href="">Directory</a>
+                <a href="directory.html">Directory</a>
                 <a href="">Join</a>
                 <a href="">Discover</a>
             </nav>
         </div>
 
-        <img src="" alt="">
+        <picture>
+            <source srcset="images/banner-large.webp" media="(min-width: 800px)">
+            <source srcset="images/banner-medeum.webp" media="(min-width: 400px)">
+            <img id="banner" src="images/banner-small.webp" alt="Centre of Ghent">
+        </picture>
     </header>
     <main>
 

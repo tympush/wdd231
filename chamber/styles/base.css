@@ -10,28 +10,32 @@ p{
     font-family: Montserrat;
 }
 
-header{
-    margin: 0;
-}
-
 #topbar{
     background-color: #968383;
     display: flex;
 }
 
 #logo{
-    width: 100px;
-    height: auto;
     margin: 20px;
 }
 
+#logo img{
+    width: 100px;
+    height: auto;
+    transition: transform 0.5s ease;
+}
+
+#logo img:hover{
+    transform: scale(1.1);
+}
+
 #title h1{
-    font-size: 32px;
+    font-size: 42px;
     margin-bottom: 0;
 }
 
 #title p{
-    font-size: 16px;
+    font-size: 18px;
     margin-top: 0;
 }
 
@@ -42,5 +46,19 @@ header{
 }
 
 .navigation a{
-    margin: 10px;
+    margin-right: 20px;
+    padding: 20px;
+    font-size: 32px;
+    color: black;
+    transition: transform 0.5s ease, color 0.5s ease;
+    text-decoration: none;
+}
+
+.navigation a:hover{
+    transform: scale(1.2);
+    color: yellow;
+}
+
+#banner{
+    width: 100%;
 }
