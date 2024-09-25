@@ -13,15 +13,16 @@ p{
 
 
 :root{
-    --header-gradient: linear-gradient(to right, #775d56, #d0a23f, #d0a23f, #d0a23faa, #d0a23faa, #2764adaa, #2764adaa, #2764adaa, #2764ad, #2764ad, #2764ad, #775d56);
+    --background-gradient: linear-gradient(to right, #775d56, #d0a23f, #d0a23f, #d0a23f, #d0a23f, #2764ad, #2764ad, #2764ad, #2764ad, #2764ad, #2764ad, #775d56);
+    --background-gradient-transparent: linear-gradient(to right, #775d56, #d0a23f, #d0a23f, #d0a23faa, #d0a23faa, #2764adaa, #2764adaa, #2764adaa, #2764ad, #2764ad, #2764ad, #775d56);
 }
 
 body{
-    background-color:black;
+    background-color:#080808;
 }
 
 #topbar{
-    background: var(--header-gradient);
+    background: var(--background-gradient-transparent);
     display: flex;
 }
 
@@ -66,7 +67,7 @@ body{
 
 .navigation a:hover{
     transform: scale(1.2);
-    color: yellow;
+    color: #fdc85d;
 }
 
 picture{
@@ -77,8 +78,12 @@ picture{
 #banner{
     width: 80%;
     height: auto;
-    border-radius: 0px 0px 10px 10px;
+    border-radius: 0px 0px 15px 15px;
     margin-top: -150px; 
     z-index: -1;
     position: relative;
+}
+
+footer{
+    background: var(--background-gradient);
 }
