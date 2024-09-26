@@ -4,6 +4,7 @@ h1{
 
 a{
     font-family: Rokkitt;
+    text-decoration: none;
 }
 
 p{
@@ -62,7 +63,6 @@ body{
     font-size: 32px;
     color: black;
     transition: transform 0.5s ease, color 0.5s ease;
-    text-decoration: none;
 }
 
 .navigation a:hover{
@@ -86,4 +86,39 @@ picture{
 
 footer{
     background: var(--background-gradient);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 20px 10% 20px 10%;
+}
+
+#footerContact{
+    grid-column: 1/2;
+}
+
+.baldText{
+    font-weight: bold;
+}
+
+#footerLinks{
+    grid-column: 2/3;
+    grid-column: 2/3;
+    display: flex;
+    justify-content: center;
+}
+
+footer a{
+    padding: 10px;
+}
+
+footer a img{
+    transition: transform 0.5s ease;
+}
+
+footer a img:hover{
+    transform: scale(1.15);
+}
+
+#footerInfo{
+    grid-column: 3/4;
+    justify-self: end;
 }
