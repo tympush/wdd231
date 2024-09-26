@@ -29,6 +29,10 @@ p{
         background-color:#080808;
     }
 
+    header{
+        margin-bottom: 20px;
+    }
+
     #topbar{
         background: var(--background-gradient-transparent);
         display: flex;
@@ -108,6 +112,7 @@ p{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         padding: 20px 10% 20px 10%;
+        margin-top: 20px;
     }
 
     #footerContact{
