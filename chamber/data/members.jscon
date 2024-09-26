@@ -5,7 +5,7 @@
       "address": "Korte Meer 14-22, 9000 Gent",
       "phone_number": "09 331 53 49",
       "website_url": "https://www.ava.be/",
-      "image_or_icon_file_name": "",
+      "image_or_icon_file_name": "ava.webp",
       "membership_level": 3
     },
     {
@@ -13,7 +13,7 @@
       "address": "St. Baafsplein 6, Mageleinstraat 5, 9000 Gent",
       "phone_number": "0478 99 56 16",
       "website_url": "http://www.belgiantreasures.be/",
-      "image_or_icon_file_name": "",
+      "image_or_icon_file_name": "belgian-treasures.webp",
       "membership_level": 2
     },
     {
@@ -21,7 +21,7 @@
       "address": "Ketelvest 51 B, 9000 Gent",
       "phone_number": "09 222 05 76",
       "website_url": "https://www.worldsendcomics.com/",
-      "image_or_icon_file_name": "",
+      "image_or_icon_file_name": "worlds-end.webp",
       "membership_level": 3
     },
     {
@@ -29,7 +29,7 @@
       "address": "Koestraat 27, 9000 Gent",
       "phone_number": "0488 18 17 38",
       "website_url": "http://sugarlicious.co/",
-      "image_or_icon_file_name": "",
+      "image_or_icon_file_name": "sugarlicious.webp",
       "membership_level": 2
     },
     {
@@ -37,7 +37,7 @@
       "address": "Sint-Niklaasstraat 17A/19, 9000 Gent",
       "phone_number": "09 223 91 20",
       "website_url": "https://www.warhammer.com/",
-      "image_or_icon_file_name": "",
+      "image_or_icon_file_name": "warhammer.webp",
       "membership_level": 1
     },
     {
@@ -45,7 +45,7 @@
       "address": "Korenmarkt 35, 9000 Gent",
       "phone_number": "09 233 92 18",
       "website_url": "http://www.quick.be/nl/restaurant/giant-bar-gent-korenmarkt",
-      "image_or_icon_file_name": "",
+      "image_or_icon_file_name": "quick.webp",
       "membership_level": 1
     },
     {
@@ -53,7 +53,7 @@
       "address": "Zonnestraat 6/8, 9000 Gent",
       "phone_number": "09 224 03 60",
       "website_url": "https://www.asadventure.com/nl/winkels/gent-centrum.html",
-      "image_or_icon_file_name": "",
+      "image_or_icon_file_name": "as-adventure.webp",
       "membership_level": 3
     },
     {
@@ -61,7 +61,7 @@
       "address": "Veldstraat 96, 9000 Gent",
       "phone_number": "09 223 52 56",
       "website_url": "https://www.panos.be/nl/winkel/panos-city-gent-(veldstraat)-23083",
-      "image_or_icon_file_name": "",
+      "image_or_icon_file_name": "panos.webp",
       "membership_level": 2
     }
   ]
