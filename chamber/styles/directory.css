@@ -1,12 +1,18 @@
+:root{
+    --grid-gradient: linear-gradient(135deg, #775d56, #eee, #eee, #eee, #775d56);
+    --grid-gradient-selected: linear-gradient(135deg, #d0a23f, #eee, #eee, #eee, #d0a23f);
+}
+
 main {
 	margin: 0 auto;
 	max-width: 95%;
+    margin-bottom: 60px;
 }
 
 h2{
     color: white;
-    margin-top:60px;
-    font-size: 52px;
+    margin-top:80px;
+    font-size: 60px;
 }
 
 .menu {
@@ -16,36 +22,39 @@ h2{
 
 .menu img {
     font-size: 50px;
-    margin: 20px;
     border-radius: 5px;
     transition: opacity 0.5s ease;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .menu img:hover {
     opacity: 0.5;
 }
 
-section {
-	border: 1px solid rgba(0, 0, 0, 0.1);
-	background-color: #eee;
+.grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+	grid-gap: 50px;
+}
+
+.grid section {
+	text-align: center;
+    background: var(--grid-gradient);
+    transition: transform 0.5s ease;
     padding: 20px;
 }
 
-.directoryGrid {
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-	grid-gap: 20px;
+.grid section:hover {
+    transform: scale(1.07);
+    background: var(--grid-gradient-selected);
 }
 
-.directoryGrid section {
-	text-align: center;
-}
-
-.directoryGrid img {
+.grid img {
 	box-shadow: 0 0 10px #333;
 }
 
-.directoryGrid h3 {
+.grid h3 {
     font-size: 26px;
 }
 
@@ -57,28 +66,19 @@ section {
 .list section {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
-	margin: 0;
-	padding: 0.25rem;
+    padding: 15px;
 }
 
 .list section img {
 	display: none;
 }
 
-.list section h3 {
-
+.list section:nth-child(odd) {
+	background-color: #eee;
 }
 
 .list section:nth-child(even) {
-	background-color: #bed;
-}
-
-section h3 {
-
-}
-
-section p {
-
+	background-color: #fdd7cc;
 }
 
 section a {

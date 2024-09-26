@@ -1,6 +1,6 @@
 const url = 'data/members.json';
 
-const directoryGrid = document.querySelector('.directoryGrid');
+const directoryGrid = document.querySelector('.grid');
 
 async function getMemberData(url) {
     const response = await fetch(url);
