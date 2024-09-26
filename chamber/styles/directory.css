@@ -13,6 +13,7 @@ h2{
     color: white;
     margin-top:80px;
     font-size: 60px;
+    letter-spacing: 3pt;
 }
 
 .menu {
@@ -30,6 +31,10 @@ h2{
 
 .menu img:hover {
     opacity: 0.5;
+}
+
+section{
+    align-items: center
 }
 
 .grid {
@@ -78,7 +83,7 @@ h2{
 }
 
 .list section:nth-child(even) {
-	background-color: #fdd7cc;
+	background-color: #e6d1cc;
 }
 
 section a {
