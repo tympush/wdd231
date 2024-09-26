@@ -19,7 +19,7 @@ const displayMembers = (members) => {
         let name = document.createElement('h3');
         let address = document.createElement('p');
         let phone = document.createElement('p');
-        let website = document.createElement('p');
+        let website = document.createElement('a');
 
         picture.setAttribute('src', member.image_source);
         picture.setAttribute('alt', `Picture of ${member.name}`);
@@ -30,7 +30,9 @@ const displayMembers = (members) => {
         name.textContent = `${member.name}`;
         address.textContent = `${member.address}`;
         phone.textContent = `${member.phone_number}`;
+
         website.textContent = `${member.website_url}`;
+        website.setAttribute('href', `${member.website_url}`);
 
         card.appendChild(picture);
         card.appendChild(name);
