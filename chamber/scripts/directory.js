@@ -33,6 +33,7 @@ const displayMembers = (members) => {
 
         website.textContent = `${member.website_url}`;
         website.setAttribute('href', `${member.website_url}`);
+        website.setAttribute('target', '_blank');
 
         card.appendChild(picture);
         card.appendChild(name);
