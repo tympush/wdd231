@@ -1,5 +1,6 @@
 :root{
-    --background-gradient: linear-gradient(40deg, #775d56, #d0a23f, #d0a23f, #d0a23f, #d0a23f, #2764ad, #2764ad, #2764ad, #2764ad, #775d56);
+    --background-gradient-tilted: linear-gradient(40deg, #775d56, #d0a23f, #d0a23f, #d0a23f, #d0a23f, #2764ad, #2764ad, #2764ad, #2764ad, #775d56);
+    --background-gradient: linear-gradient(to right, #775d56, #d0a23f, #d0a23f, #d0a23f, #d0a23f, #2764ad, #2764ad, #2764ad, #2764ad, #2764ad, #2764ad, #775d56);
     --background-gradient-transparent: linear-gradient(to right, #775d56, #d0a23f, #d0a23f, #d0a23faa, #d0a23faa, #2764adaa, #2764adaa, #2764adaa, #2764ad, #2764ad, #2764ad, #775d56);
 }
 
@@ -20,8 +21,8 @@ p{
 
 @media screen and (max-width: 1150px){
 
-    #topbar{
-        background: var(--background-gradient);
+    #logtle{
+        background: var(--background-gradient-tilted);
     }
 
     #banner{
@@ -32,6 +33,44 @@ p{
         width: 75px;
         height: auto;
         padding: 10px
+    }
+
+    #menu{
+        font-size: 32px;
+    }
+
+    #menu::before{
+        content: "☰";
+        position: absolute;
+        right: 10px;
+    }
+    
+    #menu.show::before{
+        content: "X";
+    }
+
+    nav.navigation a{
+        display: none;
+    }
+
+    nav.show{
+        padding-bottom: 20px;
+        padding-top: 20px;
+        grid-row: 1/2;
+        grid-row: 1/2;
+    }
+
+    nav.show a{
+        display: block;
+    }
+
+    nav{
+        text-align: center;
+        background-color: white;
+    }
+
+    nav a{
+        margin: 20px;
     }
 }
 
@@ -75,8 +114,6 @@ p{
     .navigation a{
         margin-right: 20px;
         padding: 20px;
-        font-size: 32px;
-        color: black;
         transition: transform 0.5s ease, color 0.5s ease;
     }
 
@@ -97,7 +134,7 @@ p{
     }
 
     footer{
-        background: var(--background-gradient);
+        background: var(--background-gradient-tilted);
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         padding: 20px 10% 20px 10%;
@@ -145,6 +182,11 @@ header{
 
 #title p{
     margin-top: 0;
+}
+
+.navigation a{
+    font-size: 32px;
+    color: black;
 }
 
 #banner{
