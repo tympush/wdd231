@@ -3,7 +3,7 @@
     --background-gradient-transparent: linear-gradient(to right, #775d56, #d0a23f, #d0a23f, #d0a23faa, #d0a23faa, #2764adaa, #2764adaa, #2764adaa, #2764ad, #2764ad, #2764ad, #775d56);
 }
 
-h1{
+h1, h2, h3{
     font-family: "Noto Serif Old Uyghur";
 }
 
