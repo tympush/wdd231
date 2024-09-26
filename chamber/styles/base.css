@@ -1,3 +1,8 @@
+:root{
+    --background-gradient: linear-gradient(to right, #775d56, #d0a23f, #d0a23f, #d0a23f, #d0a23f, #2764ad, #2764ad, #2764ad, #2764ad, #2764ad, #2764ad, #775d56);
+    --background-gradient-transparent: linear-gradient(to right, #775d56, #d0a23f, #d0a23f, #d0a23faa, #d0a23faa, #2764adaa, #2764adaa, #2764adaa, #2764ad, #2764ad, #2764ad, #775d56);
+}
+
 h1{
     font-family: "Noto Serif Old Uyghur";
 }
@@ -13,124 +18,127 @@ p{
 
 
 
-:root{
-    --background-gradient: linear-gradient(to right, #775d56, #d0a23f, #d0a23f, #d0a23f, #d0a23f, #2764ad, #2764ad, #2764ad, #2764ad, #2764ad, #2764ad, #775d56);
-    --background-gradient-transparent: linear-gradient(to right, #775d56, #d0a23f, #d0a23f, #d0a23faa, #d0a23faa, #2764adaa, #2764adaa, #2764adaa, #2764ad, #2764ad, #2764ad, #775d56);
+@media screen and (max-width: 1150px){
+
 }
 
-body{
-    background-color:#080808;
-}
 
-#topbar{
-    background: var(--background-gradient-transparent);
-    display: flex;
-}
 
-#logo{
-    margin: 20px;
-}
+@media screen and (min-width: 1150px){
+    body{
+        background-color:#080808;
+    }
 
-#logo img{
-    width: 100px;
-    height: auto;
-    transition: transform 0.5s ease;
-}
+    #topbar{
+        background: var(--background-gradient-transparent);
+        display: flex;
+    }
 
-#logo img:hover{
-    transform: scale(1.1);
-}
+    #logo{
+        margin: 20px;
+    }
 
-#title h1{
-    font-size: 44px;
-    margin-bottom: 0;
-}
+    #logo img{
+        width: 100px;
+        height: auto;
+        transition: transform 0.5s ease;
+    }
 
-#title p{
-    font-size: 18px;
-    margin-top: 0;
-}
+    #logo img:hover{
+        transform: scale(1.1);
+    }
 
-.navigation{
-    margin-left: auto;
-    align-self: flex-end;
-    display: flex;
-}
+    #title h1{
+        font-size: 44px;
+        margin-bottom: 0;
+    }
 
-.navigation a{
-    margin-right: 20px;
-    padding: 20px;
-    font-size: 32px;
-    color: black;
-    transition: transform 0.5s ease, color 0.5s ease;
-}
+    #title p{
+        font-size: 18px;
+        margin-top: 0;
+    }
 
-.navigation a:hover{
-    transform: scale(1.2);
-    color: #fdc85d;
-}
+    .navigation{
+        margin-left: auto;
+        align-self: flex-end;
+        display: flex;
+    }
 
-picture{
-    display: flex;
-    justify-content: center;
-}
+    .navigation a{
+        margin-right: 20px;
+        padding: 20px;
+        font-size: 32px;
+        color: black;
+        transition: transform 0.5s ease, color 0.5s ease;
+    }
 
-#banner{
-    width: 80%;
-    height: auto;
-    border-radius: 0px 0px 15px 15px;
-    margin-top: -150px; 
-    z-index: -1;
-}
+    .navigation a:hover{
+        transform: scale(1.2);
+        color: #fdc85d;
+    }
 
-/*#boatButton{
-    color:black;
-    background: #2764ad;
-    font-size: 26px;
-    padding: 13px;
-    border-radius: 10px;
-    position: absolute;
-    z-index: 1;
-    bottom: 500px;
-    right: 10%;
-    z-index: 1;
-}*/
+    picture{
+        display: flex;
+        justify-content: center;
+    }
 
-footer{
-    background: var(--background-gradient);
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    padding: 20px 10% 20px 10%;
-}
+    #banner{
+        width: 80%;
+        height: auto;
+        border-radius: 0px 0px 15px 15px;
+        margin-top: -150px; 
+        z-index: -1;
+    }
 
-#footerContact{
-    grid-column: 1/2;
-}
+    /*#boatButton{
+        color:black;
+        background: #2764ad;
+        font-size: 26px;
+        padding: 13px;
+        border-radius: 10px;
+        position: absolute;
+        z-index: 1;
+        bottom: 500px;
+        right: 10%;
+        z-index: 1;
+    }*/
 
-.baldText{
-    font-weight: bold;
-}
+    footer{
+        background: var(--background-gradient);
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 20px 10% 20px 10%;
+    }
 
-#footerLinks{
-    grid-column: 2/3;
-    grid-column: 2/3;
-    display: flex;
-    justify-content: center;
-}
+    #footerContact{
+        grid-column: 1/2;
+    }
 
-footer a{
-    padding: 10px;
-}
+    .baldText{
+        font-weight: bold;
+    }
 
-footer a img{
-    transition: transform 0.5s ease;
-}
+    #footerLinks{
+        grid-column: 2/3;
+        grid-column: 2/3;
+        display: flex;
+        justify-content: center;
+    }
 
-footer a img:hover{
-    transform: scale(1.15);
-}
+    footer a{
+        padding: 10px;
+    }
 
-#footerInfo{
-    grid-column: 3/4;
-    justify-self: end;
+    footer a img{
+        transition: transform 0.5s ease;
+    }
+
+    footer a img:hover{
+        transform: scale(1.15);
+    }
+
+    #footerInfo{
+        grid-column: 3/4;
+        justify-self: end;
+    }
 }
