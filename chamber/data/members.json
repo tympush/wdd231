@@ -1,67 +1,67 @@
 {
-  "businesses": [
+  "members": [
     {
       "name": "AVA Gent",
       "address": "Korte Meer 14-22, 9000 Gent",
       "phone_number": "09 331 53 49",
-      "website_url": "https://www.ava.be/",
-      "image_or_icon_file_name": "ava.webp",
+      "website_url": "https://www.ava.be",
+      "image_source": "images/ava.webp",
       "membership_level": 3
     },
     {
       "name": "Belgian Treasures",
       "address": "St. Baafsplein 6, Mageleinstraat 5, 9000 Gent",
       "phone_number": "0478 99 56 16",
-      "website_url": "http://www.belgiantreasures.be/",
-      "image_or_icon_file_name": "belgian-treasures.webp",
+      "website_url": "http://www.belgiantreasures.be",
+      "image_source": "images/belgian-treasures.webp",
       "membership_level": 2
     },
     {
       "name": "World's End Comics & Games",
       "address": "Ketelvest 51 B, 9000 Gent",
       "phone_number": "09 222 05 76",
-      "website_url": "https://www.worldsendcomics.com/",
-      "image_or_icon_file_name": "worlds-end.webp",
+      "website_url": "https://www.worldsendcomics.com",
+      "image_source": "images/worlds-end.webp",
       "membership_level": 3
     },
     {
       "name": "Sugarlicious",
       "address": "Koestraat 27, 9000 Gent",
       "phone_number": "0488 18 17 38",
-      "website_url": "http://sugarlicious.co/",
-      "image_or_icon_file_name": "sugarlicious.webp",
+      "website_url": "http://sugarlicious.co",
+      "image_source": "images/sugarlicious.webp",
       "membership_level": 2
     },
     {
       "name": "Warhammer Store",
       "address": "Sint-Niklaasstraat 17A/19, 9000 Gent",
       "phone_number": "09 223 91 20",
-      "website_url": "https://www.warhammer.com/",
-      "image_or_icon_file_name": "warhammer.webp",
+      "website_url": "https://www.warhammer.com",
+      "image_source": "images/warhammer.webp",
       "membership_level": 1
     },
     {
       "name": "Quick",
       "address": "Korenmarkt 35, 9000 Gent",
       "phone_number": "09 233 92 18",
-      "website_url": "http://www.quick.be/nl/restaurant/giant-bar-gent-korenmarkt",
-      "image_or_icon_file_name": "quick.webp",
+      "website_url": "http://www.quick.be",
+      "image_source": "images/quick.webp",
       "membership_level": 1
     },
     {
       "name": "A.S.Adventure",
       "address": "Zonnestraat 6/8, 9000 Gent",
       "phone_number": "09 224 03 60",
-      "website_url": "https://www.asadventure.com/nl/winkels/gent-centrum.html",
-      "image_or_icon_file_name": "as-adventure.webp",
+      "website_url": "https://www.asadventure.com",
+      "image_source": "images/as-adventure.webp",
       "membership_level": 3
     },
     {
       "name": "Panos",
       "address": "Veldstraat 96, 9000 Gent",
       "phone_number": "09 223 52 56",
-      "website_url": "https://www.panos.be/nl/winkel/panos-city-gent-(veldstraat)-23083",
-      "image_or_icon_file_name": "panos.webp",
+      "website_url": "https://www.panos.be",
+      "image_source": "images/panos.webp",
       "membership_level": 2
     }
   ]
