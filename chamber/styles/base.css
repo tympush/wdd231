@@ -55,32 +55,24 @@ p{
         content: "X";
     }
 
-    nav.navigation a{
-        display: none;
-        transition: color 0.5s ease;
+    nav{
+        text-align: center;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s ease-in-out;
     }
 
-    .navigation a:hover{
+    nav a{
+        margin: 30px;
+        display: block;
+    }
+
+    nav a:hover{
         color: #fdc85d;
     }
 
     nav.show{
-        padding-bottom: 20px;
-        padding-top: 20px;
-        grid-row: 1/2;
-        grid-row: 1/2;
-    }
-
-    nav.show a{
-        display: block;
-    }
-
-    nav{
-        text-align: center;
-    }
-
-    nav a{
-        margin: 20px;
+        max-height: 300px;
     }
 
     footer{
