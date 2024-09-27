@@ -1,6 +1,6 @@
 :root{
     --background-gradient-tilted: linear-gradient(40deg, #775d56, #d0a23f, #d0a23f, #d0a23f, #d0a23f, #2764ad, #2764ad, #2764ad, #2764ad, #775d56);
-    --background-gradient: linear-gradient(to right, #775d56, #d0a23f, #d0a23f, #d0a23f, #d0a23f, #2764ad, #2764ad, #2764ad, #2764ad, #2764ad, #2764ad, #775d56);
+    --background-gradient-mobile: linear-gradient(70deg, #775d56, #d0a23f, #d0a23f, #d0a23f, #d0a23f, #2764ad, #2764ad, #2764ad, #2764ad, #775d56);
     --background-gradient-transparent: linear-gradient(to right, #775d56, #d0a23f, #d0a23f, #d0a23faa, #d0a23faa, #2764adaa, #2764adaa, #2764adaa, #2764ad, #2764ad, #2764ad, #775d56);
 }
 
@@ -10,7 +10,6 @@ h1, h2, h3{
 
 a{
     font-family: Rokkitt;
-    text-decoration: none;
 }
 
 p{
@@ -22,7 +21,7 @@ p{
 @media screen and (max-width: 1150px){
 
     #logtle{
-        background: var(--background-gradient-tilted);
+        background: var(--background-gradient-mobile);
     }
 
     #banner{
@@ -36,7 +35,13 @@ p{
     }
 
     #menu{
-        font-size: 32px;
+        font-size: 48px;
+        position: absolute;
+        right: 10px;
+        top: 20px;
+        z-index: 10;
+        color:black;
+        font-family: Montserrat;
     }
 
     #menu::before{
@@ -51,6 +56,11 @@ p{
 
     nav.navigation a{
         display: none;
+        transition: color 0.5s ease;
+    }
+
+    .navigation a:hover{
+        color: #fdc85d;
     }
 
     nav.show{
@@ -71,6 +81,16 @@ p{
 
     nav a{
         margin: 20px;
+    }
+
+    footer{
+        padding: 20px;
+        background: var(--background-gradient-mobile);
+    }
+
+    #footerLinks{
+        margin-top: 40px;
+        margin-bottom: 40px;
     }
 }
 
@@ -138,7 +158,6 @@ p{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         padding: 20px 10% 20px 10%;
-        margin-top: 20px;
     }
 
     #footerContact{
@@ -189,9 +208,21 @@ header{
     color: black;
 }
 
+.nav-link {
+    text-decoration: none;
+}
+  
+.nav-link.active {
+    text-decoration: underline;
+}
+
 #banner{
     height: auto;
     border-radius: 0px 0px 15px 15px;
+}
+
+footer{
+    margin-top: 20px;
 }
 
 footer a{
