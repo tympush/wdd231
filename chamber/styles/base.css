@@ -10,6 +10,7 @@ h1, h2, h3{
 
 a{
     font-family: Rokkitt;
+    text-decoration: none;
 }
 
 p{
@@ -20,7 +21,7 @@ p{
 
 @media screen and (max-width: 1150px){
 
-    #logtle{
+    #topbar{
         background: var(--background-gradient-mobile);
     }
 
@@ -76,7 +77,6 @@ p{
 
     nav{
         text-align: center;
-        background-color: white;
     }
 
     nav a{
