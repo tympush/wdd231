@@ -14,31 +14,17 @@
     <meta property="og:image" content="https://tympush.github.io/wdd231/chamber/images/meta-image.webp" />
     <meta property="og:url" content="https://tympush.github.io/wdd231/chamber/directory.html" />
 
-        <!-- Normalize CSS - Ensures consistent default styling -->
-    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Serif+Old+Uyghur&family=Rokkitt:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     
-        <!-- Preconnect to Google Fonts to speed up DNS lookups -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    
-        <!-- Preload Google Fonts to prevent layout shifts -->
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Serif+Old+Uyghur&family=Rokkitt:ital,wght@0,100..900;1,100..900&display=swap" as="style" />
-    
-        <!-- Google Fonts stylesheet -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Serif+Old+Uyghur&family=Rokkitt:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
-    
-        <!-- Inline critical CSS to avoid layout shifts -->
     <style>
-        h1, h2, h3 { font-family: "Noto Serif Old Uyghur", "Times New Roman", serif; }
-        a { font-family: "Rokkitt", "Georgia", serif; text-decoration: none; }
-        p { font-family: "Montserrat", Arial, sans-serif; }
+        h1, h2, h3 {font-family: "Noto Serif Old Uyghur", "Times New Roman", serif;}
+        a {font-family: Rokkitt, "Georgia", serif; text-decoration: none;}
+        p {font-family: Montserrat, Arial, sans-serif;}
     </style>
     
-        <!-- Base CSS for global styles -->
-    <link rel="stylesheet" href="styles/base.css" />
-    
-        <!-- Defer non-critical CSS for page-specific styling -->
-    <link rel="stylesheet" href="styles/directory.css" media="print" onload="this.media='all'" />  
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/directory.css">
 
     <script src="scripts/getdates.js" defer></script>
     <script src="scripts/hamburger.js" defer></script>
