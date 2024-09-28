@@ -1,5 +1,5 @@
 :root{
-    --grid-gradient: linear-gradient(135deg, #775d56, #eee, #eee, #eee, #775d56);
+    --grid-gradient: linear-gradient(135deg, #928c8b, #eee, #eee, #eee, #928c8b);
     --grid-gradient-selected: linear-gradient(135deg, #d0a23f, #eee, #eee, #eee, #d0a23f);
 }
 
