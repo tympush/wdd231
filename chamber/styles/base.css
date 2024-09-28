@@ -3,19 +3,6 @@
     --background-gradient-mobile:linear-gradient(70deg,#775d56,#d0a23f,#d0a23f,#d0a23f,#d0a23f,#2764ad,#2764ad,#2764ad,#2764ad,#775d56);
     --background-gradient-transparent:linear-gradient(to right,#775d56,#d0a23f,#d0a23f,#d0a23faa,#d0a23faa,#2764adaa,#2764adaa,#2764adaa,#2764ad,#2764ad,#2764ad,#775d56)
 }
-    
-h1,h2,h3 {
-    font-family:"Noto Serif Old Uyghur"
-}
-    
-a {
-    font-family:Rokkitt;
-    text-decoration:none
-}
-    
-p {
-    font-family:Montserrat
-}
 
 @media screen and (max-width: 1150px) {
     #topbar {
