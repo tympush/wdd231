@@ -1,5 +1,6 @@
 :root {
-    --background-gradient-tilted:linear-gradient(40deg,#775d56,#d0a23f,#d0a23f,#d0a23f,#d0a23f,#2764ad,#2764ad,#2764ad,#2764ad,#775d56);
+    --background-gradient-h3:linear-gradient(70deg,#d0a23f,#d0a23f,#d0a23f,#d0a23f,#2764ad,#2764ad,#2764ad,#2764ad);
+    --grid-gradient:linear-gradient(135deg,#928c8b,#eee,#eee,#eee,#928c8b);
 }
 
 main{
@@ -20,11 +21,35 @@ h2{
 }
 
 section{
-    background-color:#eee
+    background:var(--grid-gradient);
+}
+
+section p, section img, section a{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#topInfo h3{
+    background:var(--background-gradient-h3);
 }
 
 h3{
-    background:var(--background-gradient-mobile)
+    margin: 0px;
+    padding: 10px;
+    font-size: 28px;
+}
+
+#currentWeatherInfo{
+    display: flex;
+}
+
+#weatherIcon{
+    height: 75px;
+    width: auto;
+}
+
+#currentTemp{
+    line-height: 1.7;
 }
 
 #featuredBusinesses{
