@@ -24,8 +24,8 @@ const displayMembers = (members) => {
         picture.setAttribute('src', member.image_source);
         picture.setAttribute('alt', `Picture of ${member.name}`);
         picture.setAttribute('loading', 'lazy');
-        picture.setAttribute('width', '512');
-        picture.setAttribute('height', '512');
+        picture.setAttribute('width', '200');
+        picture.setAttribute('height', '200');
 
         name.textContent = `${member.name}`;
         address.textContent = `${member.address}`;

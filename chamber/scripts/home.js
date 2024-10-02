@@ -92,3 +92,52 @@ console.log("Day After Tomorrow:", overmorrowDateFormatted);
 
 
 apiFetch();
+
+
+
+const businessUrl = 'data/members.json';
+
+async function getMemberData(businessUrl) {
+    const response = await fetch(businessUrl);
+    const data = await response.json();
+    displayMembers(data.members);
+}
+
+getMemberData(businessUrl);
+
+const displayMembers = (members) => {
+    // Filter the members to include only those with membership level 3
+    const filteredMembers = members.filter(member => member.membership_level === 3);
+
+    filteredMembers.forEach((member) => {
+        let card = document.createElement('section');
+
+        let picture = document.createElement('img');
+        let name = document.createElement('h3');
+        let address = document.createElement('p');
+        let phone = document.createElement('p');
+        let website = document.createElement('a');
+
+        picture.setAttribute('src', member.image_source);
+        picture.setAttribute('alt', `Picture of ${member.name}`);
+        picture.setAttribute('loading', 'lazy');
+        picture.setAttribute('width', '200');
+        picture.setAttribute('height', '200');
+
+        name.textContent = `${member.name}`;
+        address.textContent = `${member.address}`;
+        phone.textContent = `${member.phone_number}`;
+
+        website.textContent = `${member.website_url}`;
+        website.setAttribute('href', `${member.website_url}`);
+        website.setAttribute('target', '_blank');
+
+        card.appendChild(picture);
+        card.appendChild(name);
+        card.appendChild(address);
+        card.appendChild(phone);
+        card.appendChild(website);
+    
+        featuredBusinessesContainer.appendChild(card);
+    });
+}
