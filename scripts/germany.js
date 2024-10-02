@@ -28,5 +28,4 @@ function displayResults(data) {
     captionDesc.textContent = `${desc}`;
 }
 
-// Call apiFetch to run the code
 apiFetch();

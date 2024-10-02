@@ -1,0 +1,17 @@
+:root {
+    --background-gradient-tilted:linear-gradient(40deg,#775d56,#d0a23f,#d0a23f,#d0a23f,#d0a23f,#2764ad,#2764ad,#2764ad,#2764ad,#775d56);
+}
+
+#topInfo{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 20px;
+}
+
+section{
+    background-color:#eee
+}
+
+h2{
+    background:var(--background-gradient-mobile)
+}
