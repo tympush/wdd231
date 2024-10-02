@@ -2,6 +2,17 @@
     --background-gradient-tilted:linear-gradient(40deg,#775d56,#d0a23f,#d0a23f,#d0a23f,#d0a23f,#2764ad,#2764ad,#2764ad,#2764ad,#775d56);
 }
 
+main{
+    margin:0 auto;
+    max-width:95%;
+    margin-bottom:60px
+}
+
+h2{
+    font-size:60px;
+    color:#fff;
+}
+
 #topInfo{
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
@@ -12,6 +23,17 @@ section{
     background-color:#eee
 }
 
-h2{
+h3{
     background:var(--background-gradient-mobile)
+}
+
+#featuredBusinesses{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(500px,1fr));
+    grid-gap:50px;
+    margin-top: 60px;
+}
+
+#featuredBusinesses section{
+    border-radius: 10px;
 }
