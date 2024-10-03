@@ -35,8 +35,8 @@ section p, section img, section a{
 
 h3{
     margin: 0px;
-    padding: 10px;
-    font-size: 28px;
+    padding: 15px;
+    font-size: 26px;
 }
 
 #currentWeatherInfo{
@@ -61,4 +61,23 @@ h3{
 
 #featuredBusinesses section{
     border-radius: 10px;
+}
+
+#featuredBusinesses>section>div{
+    display: flex;
+}
+
+#featuredBusinesses h3{
+    text-align: center;
+}
+
+#featuredBusinesses img{
+    height: 120px;
+    width: auto;
+    padding: 18px;
+}
+
+#featuredBusinesses p, #featuredBusinesses a{
+    color: black;
+    font-size: 16px;
 }

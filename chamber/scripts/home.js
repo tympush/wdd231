@@ -112,8 +112,11 @@ const displayMembers = (members) => {
     filteredMembers.forEach((member) => {
         let card = document.createElement('section');
 
-        let picture = document.createElement('img');
         let name = document.createElement('h3');
+        let line = document.createElement('hr');
+        let contentDivide = document.createElement('div');
+        let picture = document.createElement('img');
+        let infoDivide = document.createElement('div')
         let address = document.createElement('p');
         let phone = document.createElement('p');
         let website = document.createElement('a');
@@ -125,18 +128,23 @@ const displayMembers = (members) => {
         picture.setAttribute('height', '200');
 
         name.textContent = `${member.name}`;
-        address.textContent = `${member.address}`;
-        phone.textContent = `${member.phone_number}`;
+        address.innerHTML = `<strong>ADDRESS: </strong>${member.address}`;
+        phone.innerHTML = `<strong>PHONE: </strong>${member.phone_number}`;
 
-        website.textContent = `${member.website_url}`;
+        website.innerHTML = `<strong>URL: </strong>${member.website_url}`;
         website.setAttribute('href', `${member.website_url}`);
         website.setAttribute('target', '_blank');
 
-        card.appendChild(picture);
+        infoDivide.appendChild(address);
+        infoDivide.appendChild(phone);
+        infoDivide.appendChild(website);
+
+        contentDivide.appendChild(picture);
+        contentDivide.appendChild(infoDivide);
+
         card.appendChild(name);
-        card.appendChild(address);
-        card.appendChild(phone);
-        card.appendChild(website);
+        card.appendChild(line);
+        card.appendChild(contentDivide);
     
         featuredBusinessesContainer.appendChild(card);
     });
