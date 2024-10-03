@@ -17,7 +17,6 @@ async function apiFetch() {
         if (response.ok) {
             const data = await response.json();
             displayCurrentResults(data);
-            displayForecastResults(data);
         } else {
             throw Error(await response.text());
         }
@@ -54,44 +53,45 @@ function displayCurrentResults(data) {
     `;
 }
 
-function displayForecastResults(data) {
-    
-    todayFor.innerHTML = `Today: ${data}&deg;C`;
-    tomorrowFor.innerHTML = `Tomorrow: ${data}&deg;C`;
-    overmorrowFor.innerHTML = `Overmorrow: ${data}&deg;C`;
-}
-
-// Function to format a date object into YYYY-MM-DD
-function formatDate(date) {
-    let year = date.getFullYear();
-    let month = (date.getMonth() + 1).toString().padStart(2, '0'); // Months are 0-indexed
-    let day = date.getDate().toString().padStart(2, '0');
-    return `${year}-${month}-${day}`;
-}
-  
-// Get current date
-let currentDate = new Date();
-  
-// Get tomorrow's date
-let tomorrowDate = new Date();
-tomorrowDate.setDate(currentDate.getDate() + 1);
-  
-// Get the day after tomorrow's date
-let overmorrowDate = new Date();
-overmorrowDate.setDate(currentDate.getDate() + 2);
-  
-// Store the dates in YYYY-MM-DD format
-let currentDateFormatted = formatDate(currentDate);
-let tomorrowDateFormatted = formatDate(tomorrowDate);
-let overmorrowDateFormatted = formatDate(overmorrowDate);
-  
-console.log("Current Date:", currentDateFormatted);
-console.log("Tomorrow:", tomorrowDateFormatted);
-console.log("Day After Tomorrow:", overmorrowDateFormatted);
-  
-
-
 apiFetch();
+
+
+
+const forecastUrl = 'https://api.openweathermap.org/data/2.5/forecast?lat=51.05463&lon=3.72180&units=metric&appid=6a5f3ff3ccf7c08878897af76878cba4';
+
+async function apiFetchForecast() {
+    try {
+        const response = await fetch(forecastUrl);
+        if (response.ok) {
+            const data = await response.json();
+            displayForecastResults(data);
+        } else {
+            throw Error(await response.text());
+        }
+    } catch (error) {
+        console.log(error);
+    }
+}
+
+// Replace these with the actual 'dt' values you're looking for
+const todayDt = 1727989200;
+const tomorrowDt = 1728000000;
+const overmorrowDt = 1728010800;
+
+function displayForecastResults(data) {
+     
+    data.list.forEach(item => {
+        if (item.dt === todayDt) {
+            todayFor.innerHTML = `Today: ${item.main.temp}&deg;C`;
+        } else if (item.dt === tomorrowDt) {
+            tomorrowFor.innerHTML = `Tomorrow: ${item.main.temp}&deg;C`;
+        } else if (item.dt === overmorrowDt) {
+            overmorrowFor.innerHTML = `Overmorrow: ${item.main.temp}&deg;C`;
+        }
+    });
+}
+
+apiFetchForecast();
 
 
 
