@@ -6,7 +6,7 @@
 
 h1, h2, h3 {font-family: "Noto Serif Old Uyghur", "Times New Roman", serif;}
 a {font-family: Rokkitt, "Georgia", serif; text-decoration: none;}
-p {font-family: Montserrat, Arial, sans-serif;}
+p, li {font-family: Montserrat, Arial, sans-serif;}
 
 @media screen and (max-width: 1150px) {
     #topbar {

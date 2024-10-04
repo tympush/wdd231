@@ -52,6 +52,10 @@ h3{
     line-height: 1.7;
 }
 
+#weatherForecast p{
+    font-size: 22px;
+}
+
 #featuredBusinesses{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(500px,1fr));
