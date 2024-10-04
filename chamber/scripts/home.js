@@ -73,20 +73,76 @@ async function apiFetchForecast() {
     }
 }
 
-// Replace these with the actual 'dt' values you're looking for
-const todayDt = 1727989200;
-const tomorrowDt = 1728000000;
-const overmorrowDt = 1728010800;
+function formatDateWithTime(date) {
+    // Format the date to YYYY-MM-DD HH:00:00
+    const year = date.getFullYear();
+    const month = String(date.getMonth() + 1).padStart(2, '0'); // Months are 0-based, so add 1
+    const day = String(date.getDate()).padStart(2, '0');
+    const hours = String(date.getHours()).padStart(2, '0');
+    
+    return `${year}-${month}-${day} ${hours}:00:00`;
+}
+  
+function addDays(date, days) {
+    const result = new Date(date);
+    result.setDate(result.getDate() + days);
+    return result;
+}
+  
+function adjustToNext3HourInterval(date) {
+    const hours = date.getHours();
+    
+    if (hours < 15) {
+      date.setHours(15, 0, 0, 0);
+    }
+    else if (hours >= 15 && hours < 18) {
+      date.setHours(18, 0, 0, 0);
+    }
+    else if (hours >= 18 && hours < 21) {
+      date.setHours(21, 0, 0, 0);
+    }
+    else {
+      date.setHours(0, 0, 0, 0);
+      date.setDate(date.getDate() + 1);
+    }
+}
+
+const now = new Date();
+
+const tomorrow = new Date(now);
+const overmorrow = new Date(now);
+
+adjustToNext3HourInterval(now);
+
+tomorrow.setHours(15, 0, 0, 0);
+overmorrow.setHours(15, 0, 0, 0);
+  
+const todayDt = formatDateWithTime(now);
+const tomorrowDt = formatDateWithTime(addDays(tomorrow, 1));
+const overmorrowDt = formatDateWithTime(addDays(overmorrow, 2));
+  
+/*console.log("Today:", todayDt);
+console.log("Tomorrow:", tomorrowDt);
+console.log("Overmorrow:", overmorrowDt);*/
+
+function getWeekdayName(dateStr) {
+    const date = new Date(dateStr); // Convert the date string to a Date object
+    const options = { weekday: 'long' }; // Specify that we want the full name of the weekday
+    return date.toLocaleDateString('en-US', options); // Get the weekday name
+}
 
 function displayForecastResults(data) {
-     
     data.list.forEach(item => {
-        if (item.dt === todayDt) {
-            todayFor.innerHTML = `Today: ${item.main.temp}&deg;C`;
-        } else if (item.dt === tomorrowDt) {
-            tomorrowFor.innerHTML = `Tomorrow: ${item.main.temp}&deg;C`;
-        } else if (item.dt === overmorrowDt) {
-            overmorrowFor.innerHTML = `Overmorrow: ${item.main.temp}&deg;C`;
+        const roundedTemp = Math.round(item.main.temp); // Round the temperature to the nearest whole number
+
+        if (item.dt_txt === todayDt) {
+            todayFor.innerHTML = `Today: <strong>${roundedTemp}&deg;C</strong>`;
+        } else if (item.dt_txt === tomorrowDt) {
+            const tomorrowDayName = getWeekdayName(tomorrowDt); // Get the weekday name for tomorrow
+            tomorrowFor.innerHTML = `${tomorrowDayName}: <strong>${roundedTemp}&deg;C</strong>`;
+        } else if (item.dt_txt === overmorrowDt) {
+            const overmorrowDayName = getWeekdayName(overmorrowDt); // Get the weekday name for overmorrow
+            overmorrowFor.innerHTML = `${overmorrowDayName}: <strong>${roundedTemp}&deg;C</strong>`;
         }
     });
 }
