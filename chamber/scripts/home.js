@@ -162,10 +162,16 @@ async function getMemberData(businessUrl) {
 getMemberData(businessUrl);
 
 const displayMembers = (members) => {
-    // Filter the members to include only those with membership level 3
-    const filteredMembers = members.filter(member => member.membership_level === 3);
+    // Filter members to include only those with membership level 2 or 3
+    const filteredMembers = members.filter(member => member.membership_level === 2 || member.membership_level === 3);
 
-    filteredMembers.forEach((member) => {
+    // Shuffle the filtered members array to randomize their order
+    const shuffledMembers = filteredMembers.sort(() => 0.5 - Math.random());
+
+    // Select the first 3 members from the shuffled array
+    const selectedMembers = shuffledMembers.slice(0, 3);
+
+    selectedMembers.forEach((member) => {
         let card = document.createElement('section');
 
         let name = document.createElement('h3');
