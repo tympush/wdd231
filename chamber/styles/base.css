@@ -53,7 +53,9 @@ p, li {font-family: Montserrat, Arial, sans-serif;}
     
     nav a {
         margin:30px;
-        display:block
+        display:block;
+        color:white;
+        transition: color 1s ease;
     }
     
     nav a:hover {
@@ -61,7 +63,11 @@ p, li {font-family: Montserrat, Arial, sans-serif;}
     }
     
     nav.show {
-        max-height:300px
+        max-height:300px;
+    }
+
+    nav.show a{
+        color:#000
     }
     
     footer {
@@ -112,7 +118,8 @@ p, li {font-family: Montserrat, Arial, sans-serif;}
     .navigation a {
         margin-right:20px;
         padding:20px;
-        transition:transform .5s ease,color .5s ease
+        transition:transform .5s ease,color .5s ease;
+        color:#000;
     }
     
     .navigation a:hover {
@@ -182,7 +189,6 @@ header {
     
 .navigation a {
     font-size:32px;
-    color:#000
 }
     
 .nav-link {
