@@ -39,6 +39,11 @@ h3{
     font-size: 26px;
 }
 
+#events ul{
+    font-size: 18px;
+    line-height: 1.7;
+}
+
 #currentWeatherInfo{
     display: flex;
 }
@@ -106,5 +111,5 @@ h3{
 
 #callToAction:hover{
     transform:scale(1.2);
-    background:#fdc85d
+    background:#fafd5d
 }
