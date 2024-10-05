@@ -61,6 +61,7 @@ h3{
     grid-template-columns:repeat(auto-fit,minmax(500px,1fr));
     grid-gap:50px;
     margin-top: 60px;
+    margin-bottom: 60px;
 }
 
 #featuredBusinesses section{
@@ -84,4 +85,26 @@ h3{
 #featuredBusinesses p, #featuredBusinesses a{
     color: black;
     font-size: 16px;
+}
+
+#ctaContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+
+#callToAction{
+    font-size: 38px;
+    color: black;
+    background: #f94449;
+    border-radius: 10px;
+    padding: 10px 120px 10px 120px;
+    margin: 20px;
+    transition:transform .5s ease, background .5s ease
+}
+
+#callToAction:hover{
+    transform:scale(1.2);
+    background:#fdc85d
 }
