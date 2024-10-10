@@ -3,9 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ghent Chamber of Commerce</title>
+    <meta name="author" content="Tymur Pushnoy">
+    <meta name="description" content="WDD 231 - Web Frontend Development I - Ghent, Belgium - Chamber of Commerce - Thank You Page - Tymur Pushnoy">
+
+    <link rel="icon" href="favicon.ico">
+
+    <meta property="og:title" content="Ghent Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://tympush.github.io/wdd231/chamber/images/meta-image.webp">
+    <meta property="og:url" content="https://tympush.github.io/wdd231/chamber/directory.html">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Serif+Old+Uyghur&family=Rokkitt:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/join.css">
+
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/hamburger.js" defer></script>
+    <script src="scripts/thanks.js" defer></script>
 </head>
 <body>
-    <p>thanks bro</p>
+    <header>
+        <div id="topbar">
+            <div id="logtle">
+                <a id="logo" href="index.html">
+                    <img src="images/logo.webp" alt="ghent logo" width="100" height="100">
+                </a>
+
+                <div id="title">
+                    <h1>Ghent</h1>
+                    <p>Chamber of Commerce</p>
+                </div>
+            </div>
+
+            <a id="menu" href="#" aria-label="Toggle Menu"></a>
+
+            <nav class="navigation">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="directory.html" class="nav-link">Directory</a>
+                <a href="join.html" class="nav-link">Join</a>
+                <a href="discover.html" class="nav-link">Discover</a>
+            </nav>
+        </div>
+
+        <picture>
+            <source srcset="images/banner-large.webp" media="(min-width: 1200px)" width="1536" height="512">
+            <source srcset="images/banner-medium.webp" media="(min-width: 600px)" width="1150" height="383">
+            <img id="banner" src="images/banner-small.webp" alt="Centre of Ghent" width="600" height="200">
+        </picture>
+    </header>
+
+
+
+    <main>
+        <div id="results"></div>
+    </main>
+
+
+    
+    <footer>
+        <div id="footerContact">
+            <p class="baldText">Ghent Chamber of Commerce</p>
+            <p>Korenmarkt, 9000 Gent</p>
+            <p>info@ghentcc.org</p>
+            <p>(+32) 2 123 4567</p>
+        </div>
+
+        <div id="footerLinks">
+            <a class="social" href="https://www.youtube.com/">
+                <img src="images/youtube.webp" alt="youtube logo" loading="lazy" width="80" height="80">
+            </a>
+            <a class="social" href="https://x.com/">
+                <img src="images/x.webp" alt="x logo" loading="lazy" width="80" height="80">
+            </a>
+            <a class="social" href="https://www.linkedin.com/">
+                <img src="images/linkedin.webp" alt="linkedin logo" loading="lazy" width="80" height="80">
+            </a>
+        </div>
+
+        <div id="footerInfo">
+            <p>WDD231 Class Project</p>
+            <p>Tymur Pushnoy</p>
+            <p id="info">&copy;<span id="currentyear"></span> Ghent Chamber of Commerce</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
 </body>
 </html>
