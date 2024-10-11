@@ -1,16 +1,24 @@
 @media screen and (max-width: 1150px) {
     main>div{
-        display: flex;
-        flex-direction: column;
         justify-content: center;
-        align-items: center;
+    }
+
+    #infoHalf>div{
+        width: 70%;
     }
 }
 
 @media screen and (min-width: 1150px) {
     main{
         display: flex;
+        justify-content: center;
     }
+}
+
+main>div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 h2{
