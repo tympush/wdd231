@@ -4,9 +4,9 @@
     --background-gradient-transparent:linear-gradient(to right,#775d56,#d0a23f,#d0a23f,#d0a23faa,#d0a23faa,#2764adaa,#2764adaa,#2764adaa,#2764ad,#2764ad,#2764ad,#775d56)
 }
 
-h1, h2, h3 {font-family: "Noto Serif Old Uyghur", "Times New Roman", serif;}
+h1, h2, h3, h4 {font-family: "Noto Serif Old Uyghur", "Times New Roman", serif;}
 a {font-family: Rokkitt, "Georgia", serif; text-decoration: none;}
-p, li {font-family: Montserrat, Arial, sans-serif;}
+p, li, label {font-family: Montserrat, Arial, sans-serif;}
 
 @media screen and (max-width: 1150px) {
     #topbar {
