@@ -1,3 +1,8 @@
+:root {
+    --background-gradient-h3:linear-gradient(70deg,#d0a23f,#d0a23f,#d0a23f,#d0a23f,#2764ad,#2764ad,#2764ad,#2764ad);
+    --grid-gradient:linear-gradient(135deg,#928c8b,#eee,#eee,#eee,#928c8b);
+}
+
 @media screen and (max-width: 1150px) {
 
     h2{
@@ -157,24 +162,36 @@ input:-webkit-autofill {
 #infoHalf > div:nth-child(4) { animation-delay: 0.2s; }
 #infoHalf > div:nth-child(5) { animation-delay: 0.3s; }
 
-dialog{
+dialog {
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: .25rem;
-    padding: 1rem;
-    background-color: #fff;
-    box-shadow: 0 0 3rem #777;
+    padding: 0; /* Reset padding to prevent extra space */
+    box-shadow: 0 0 3rem #d0a23f;
     width: 90%;
     max-width: 600px;
+    text-align: center;
+    background: var(--grid-gradient);
 }
 
-::backdrop{
-    background-color: rgba(0, 0, 0, 0.5);
+::backdrop {
+    background-color: rgba(0, 0, 0, 0.75);
 }
 
-dialog button{
+dialog button {
     position: absolute;
-    top: 23px;
-    right: 23px;
+    top: 16px;
+    right: 16px;
     padding: .5rem 1rem;
     border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+dialog h4 {
+    font-size: 32px;
+    background: var(--background-gradient-h3);
+    padding: 15px;
+    margin: 0; /* Remove any margin to avoid space above */
+}
+
+dialog p {
+    margin: 30px;
 }
