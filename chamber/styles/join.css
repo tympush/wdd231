@@ -190,8 +190,7 @@ dialog button {
 }
 
 dialog button:hover {
-    background-color: #f94449;
-    color: white;
+    background-color: #aaa;
 }
 
 dialog h4 {
