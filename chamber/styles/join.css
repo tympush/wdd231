@@ -70,13 +70,16 @@ form label {
     display: block;
     font-size: .8rem;
     color: #d0a23f;
-    padding-top: .2rem;
+    padding: 10px;
+    font-size: 14px;
 }
 
 form h3 {
     font-size: .9rem;
     color: #619ae0;
     margin: 1.5rem 0 .2rem 0;
+    padding: 10px;
+    font-size: 16px;
 }
 
 form input[type=text],
@@ -109,6 +112,18 @@ form input:required:valid {
     border-left-color: green;
 }
 
+input[type="radio"] {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.radioText {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+}
+
 form input[type=submit] {
     border: none;
     text-align: center;
@@ -120,18 +135,13 @@ form input[type=submit] {
     font-size: 1.2rem;
     -webkit-appearance: none;
     appearance: none;
+    margin-left: 10px;
 }
 
 input:-webkit-autofill {
     -webkit-text-fill-color: #3D405B;
 }
 
-#results {
-    background-color: #F4F1DE;
-    padding: 0 1rem;
-    border: 1px solid #E07A5F;
-    border-radius: 6px;
-}
 
 #infoHalf div{
     outline: 2px solid #2764ad;
