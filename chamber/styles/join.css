@@ -165,7 +165,7 @@ input:-webkit-autofill {
 dialog {
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: .25rem;
-    padding: 0; /* Reset padding to prevent extra space */
+    padding: 0;
     box-shadow: 0 0 3rem #d0a23f;
     width: 90%;
     max-width: 600px;
@@ -181,15 +181,24 @@ dialog button {
     position: absolute;
     top: 16px;
     right: 16px;
-    padding: .5rem 1rem;
+    padding: 0.5rem 1.5rem;
     border: 1px solid rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+dialog button:hover {
+    background-color: #f94449;
+    color: white;
 }
 
 dialog h4 {
     font-size: 32px;
     background: var(--background-gradient-h3);
     padding: 15px;
-    margin: 0; /* Remove any margin to avoid space above */
+    margin: 0;
 }
 
 dialog p {
