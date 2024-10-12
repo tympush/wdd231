@@ -1,0 +1,23 @@
+:root {
+    --grid-gradient:linear-gradient(135deg,#928c8b,#eee,#eee,#eee,#928c8b);
+}
+
+h2{
+    color:white;
+    text-align: center;
+    padding: 20px;
+}
+
+main>div{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+#results{
+    background: var(--grid-gradient);
+    width: 100%;
+    max-width: 500px;
+    padding: 30px;
+    border-radius: 15px;
+}
