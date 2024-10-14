@@ -32,3 +32,8 @@
 #font3{
     font-family: Dekko;
 }
+
+#wire{
+    display: flex;
+    gap: 30px;
+}
