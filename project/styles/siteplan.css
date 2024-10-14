@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Dekko&family=Salsa&display=swap');
+
+#colors{
+    display: flex;
+}
+
+#colors div{
+    padding: 20px;
+    border: 2px solid black;
+}
+
+#c1{
+    background-color: #4c69f6;
+}
+
+#c2{
+    background-color: #ee5454;
+}
+
+#c3{
+    background-color: #f3df5b;
+}
+
+#font1{
+    font-family: Salsa;
+}
+
+#font2{
+    font-family: Comfortaa;
+}
+
+#font3{
+    font-family: Dekko;
+}
