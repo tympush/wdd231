@@ -220,3 +220,50 @@ footer a img {
 footer a img:hover {
     transform:scale(1.15)
 }
+
+
+
+#discovery{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    margin:0 auto;
+    max-width:80%;
+    gap: 20px;
+}
+
+#discoveryArticles{
+
+}
+
+#discoveryArticles>div{
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    background-color: white;
+    text-align: center;
+}
+
+.chart{
+    width: 100%;
+    height: auto;
+}
+
+.articleLogo{
+    width: 150px;
+    height: auto;
+}
+
+#discoveryImages{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(480px,1fr));
+    grid-gap:50px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    background-color: white;
+    text-align: center;
+}
+
+#discoveryImages img{
+    max-width: 480px;
+    height: auto;
+}
