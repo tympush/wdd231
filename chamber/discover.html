@@ -5,18 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ghent Chamber of Commerce</title>
     <meta name="author" content="Tymur Pushnoy">
-    <meta name="description" content="WDD 231 - Web Frontend Development I - Ghent, Belgium - Chamber of Commerce - Tymur Pushnoy">
-    <meta property="og:title" content="Ghent Chamber of Commerce" />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="" />
-    <meta property="og:url" content="" />
+    <meta name="description" content="WDD 231 - Web Frontend Development I - Ghent, Belgium - Chamber of Commerce - Join Page - Tymur Pushnoy">
+
+    <link rel="icon" href="favicon.ico">
+
+    <meta property="og:title" content="Ghent Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://tympush.github.io/wdd231/chamber/images/meta-image.webp">
+    <meta property="og:url" content="https://tympush.github.io/wdd231/chamber/directory.html">
+
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/directory.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Serif+Old+Uyghur&family=Rokkitt:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
+
     <script src="scripts/getdates.js" defer></script>
     <script src="scripts/hamburger.js" defer></script>
-    <script src="scripts/directory.js" defer></script>
 </head>
 <body>
     <header>
@@ -43,8 +46,8 @@
         </div>
 
         <picture>
-            <source srcset="images/banner-large.webp" media="(min-width: 1200px)" width="1800" height="600">
-            <source srcset="images/banner-medium.webp" media="(min-width: 600px)" width="1200" height="400">
+            <source srcset="images/banner-large.webp" media="(min-width: 1200px)" width="1536" height="512">
+            <source srcset="images/banner-medium.webp" media="(min-width: 600px)" width="1150" height="383">
             <img id="banner" src="images/banner-small.webp" alt="Centre of Ghent" width="600" height="200">
         </picture>
     </header>
@@ -52,7 +55,60 @@
 
 
     <main>
+        <div>
+            <div>
+                <h3>Increase in Toursism</h3>
+                <p>
+                    Tourism in Ghent rises this time of year as visitors flock to its historic landmarks like Gravensteen Castle and St. Bavo Cathedral. 
+                    The city's rich culture and festive events make it a popular autumn destination.
+                </p>
+            </div>
 
+            <img src="images/piechart.webp" alt="Ghent Product Demand Chart" width="512" height="512" loading="lazy">
+
+            <div>
+                <h3>Christmas Market Stands</h3>
+                <img src="images/kerst.webp" alt="Ghent Christmas Market Logo" width="256" height="256" loading="lazy">
+                <p>
+                    The Ghent Christmas Market is set to return soon, bringing festive cheer to the heart of the city. 
+                    As always, local businesses can book stands to showcase their products, adding to the market’s vibrant atmosphere. 
+                    With its cozy stalls, holiday lights, and seasonal treats, the market is a must-visit for anyone looking to experience the magic of the holidays in Ghent.
+                </p>
+            </div>
+        </div>
+
+        <div>
+            <figure>
+                <img src="images/graslei.webp" alt="Graslei River" width="620" height="480" loading="lazy">
+                <figcaption>Graslei River</figcaption>
+            </figure>
+            
+            <figure>
+                <img src="images/st-bavo.webp" alt="St. Bavo Cathedral" width="620" height="480" loading="lazy">
+                <figcaption>St. Bavo Cathedral</figcaption>
+            </figure>
+            
+            <figure>
+                <img src="images/gravensteen.webp" alt="Gravensteen Castle" width="620" height="480" loading="lazy">
+                <figcaption>Gravensteen Castle</figcaption>
+            </figure>
+            
+            <figure>
+                <img src="images/belfort.webp" alt="The Belfort of Ghent" width="620" height="480" loading="lazy">
+                <figcaption>The Belfort of Ghent</figcaption>
+            </figure>
+            
+            <figure>
+                <img src="images/st-michael.webp" alt="St. Michael Bridge" width="620" height="480" loading="lazy">
+                <figcaption>St. Michael Bridge</figcaption>
+            </figure>
+            
+            <figure>
+                <img src="images/korenmarkt.webp" alt="The Korenmarkt" width="620" height="480" loading="lazy">
+                <figcaption>The Korenmarkt</figcaption>
+            </figure>
+            
+        </div>
     </main>
 
 
@@ -66,15 +122,15 @@
         </div>
 
         <div id="footerLinks">
-                <a class="social" href="https://www.youtube.com/">
-                    <img src="images/youtube.webp" alt="youtube logo" width="80" height="80">
-                </a>
-                <a class="social" href="https://x.com/">
-                    <img src="images/x.webp" alt="x logo" width="80" height="80">
-                </a>
-                <a class="social" href="https://www.linkedin.com/">
-                    <img src="images/linkedin.webp" alt="linkedin logo" width="80" height="80">
-                </a>
+            <a class="social" href="https://www.youtube.com/">
+                <img src="images/youtube.webp" alt="youtube logo" loading="lazy" width="80" height="80">
+            </a>
+            <a class="social" href="https://x.com/">
+                <img src="images/x.webp" alt="x logo" loading="lazy" width="80" height="80">
+            </a>
+            <a class="social" href="https://www.linkedin.com/">
+                <img src="images/linkedin.webp" alt="linkedin logo" loading="lazy" width="80" height="80">
+            </a>
         </div>
 
         <div id="footerInfo">
