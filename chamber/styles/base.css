@@ -186,6 +186,15 @@ p, li, label, figcaption {font-family: Montserrat, Arial, sans-serif;}
         display:grid;
         grid-template-columns:repeat(auto-fit,minmax(480px,1fr));
     }
+
+    #discoveryImages img {
+        transition: box-shadow 0.3s ease-in-out;
+      }
+      
+      #discoveryImages img:hover {
+        box-shadow: 0 0 40px 10px #ffc954;
+      }
+      
 }
     
 body {
