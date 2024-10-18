@@ -1,3 +1,7 @@
+:root {
+    --background-gradient:linear-gradient(40deg,#3959f7,#f11d1d);
+}
+
 h1, h2, h3, h4 {font-family: Salsa, "Times New Roman", serif;}
 a {font-family: Comfortaa, "Georgia", serif; text-decoration: none;}
 p {font-family: Dekko Arial, sans-serif;}
@@ -9,7 +13,7 @@ p {font-family: Dekko Arial, sans-serif;}
     #logo img {
         width:75px;
         height:auto;
-        padding:10px
+        padding:10px;
     }
     
     #menu {
@@ -19,43 +23,37 @@ p {font-family: Dekko Arial, sans-serif;}
         top:20px;
         z-index:10;
         color:#000;
-        font-family:Montserrat
+        font-family:Montserrat;
     }
     
     #menu::before {
         content:"☰";
         position:absolute;
-        right:10px
+        right:10px;
     }
     
     #menu.show::before {
-        content:"X"
+        content:"X";
     }
     
     nav {
         text-align:center;
         max-height:0;
         overflow:hidden;
-        transition:max-height .5s ease-in-out
+        transition:max-height .5s ease-in-out;
     }
     
     nav a {
         margin:30px;
         display:block;
-        color:white;
-        transition: color 1s ease;
     }
     
     nav a:hover {
-        color:#fdc85d
+        color:#fdc85d;
     }
     
     nav.show {
         max-height:300px;
-    }
-
-    nav.show a{
-        color:#000
     }
 }
 
@@ -63,47 +61,46 @@ p {font-family: Dekko Arial, sans-serif;}
 
 @media screen and (min-width: 1150px) {
     #topbar {
-        display:flex
+        display:flex;
     }
     
     #logo {
-        margin:20px
+        margin:20px;
     }
     
     #logo img {
         width:100px;
         height:auto;
-        transition:transform .5s ease
+        transition:transform .5s ease;
     }
     
     #logo img:hover {
-        transform:scale(1.1)
+        transform:scale(1.2);
     }
     
     #title h1 {
-        font-size:44px
+        font-size:44px;
     }
     
     #title p {
-        font-size:18px
+        font-size:18px;
     }
     
     .navigation {
         margin-left:auto;
         align-self:flex-end;
-        display:flex
+        display:flex;
     }
     
     .navigation a {
         margin-right:20px;
         padding:20px;
         transition:transform .5s ease,color .5s ease;
-        color:#000;
     }
     
     .navigation a:hover {
         transform:scale(1.2);
-        color:#fdc85d
+        color:#fdc85d;
     }   
 }
 
@@ -114,29 +111,35 @@ body {
 }
     
 header {
-    margin-bottom:20px
+    margin-bottom: 20px;
+    background-image: 
+        radial-gradient(circle, rgba(0, 0, 0, 0.2) 20%, transparent 20%), /* Dots pattern */
+        var(--background-gradient); /* Gradient */
+    background-size: 10px 10px, cover; /* Dots first, gradient second */
+    background-position: 0 0, center; /* Align dots and gradient */
 }
     
 #logtle {
-    display:flex
+    display:flex;
 }
     
 #title h1 {
-    margin-bottom:0
+    margin-bottom:0;
 }
     
 #title p {
-    margin-top:0
+    margin-top:0;
 }
     
 .navigation a {
     font-size:32px;
+    color:#000;
 }
     
 .nav-link {
-    text-decoration:none
+    text-decoration:none;
 }
     
 .nav-link.active {
-    text-decoration:underline
+    text-decoration:underline;
 }
