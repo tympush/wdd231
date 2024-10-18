@@ -1,5 +1,5 @@
 :root {
-    --background-gradient:linear-gradient(40deg,#3959f7,#f11d1d);
+    --background-gradient:linear-gradient(60deg,#3959f7,#f11d1d);
 }
 
 h1, h2, h3, h4 {font-family: Salsa, "Times New Roman", serif;}
@@ -112,11 +112,24 @@ body {
     
 header {
     margin-bottom: 20px;
+    position: relative; /* Allow positioning of pseudo-element */
+    background: var(--background-gradient); /* Base gradient */
+}
+
+header::before {
+    content: ''; /* Required for pseudo-element */
+    position: absolute; /* Position it over the header */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     background-image: 
-        radial-gradient(circle, rgba(0, 0, 0, 0.2) 20%, transparent 20%), /* Dots pattern */
-        var(--background-gradient); /* Gradient */
-    background-size: 10px 10px, cover; /* Dots first, gradient second */
-    background-position: 0 0, center; /* Align dots and gradient */
+        radial-gradient(circle, rgba(0, 0, 0, 0.1) 3px, transparent 6px); /* Adjusted dot size */
+    
+    background-size: 20px 20px; /* Adjust this for spacing between dots */
+    background-position: center; /* Position in the center */
+    background-repeat: repeat; /* Dots will repeat */
+    pointer-events: none; /* Allow interaction with elements below */
 }
     
 #logtle {
