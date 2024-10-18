@@ -189,12 +189,11 @@ p, li, label, figcaption {font-family: Montserrat, Arial, sans-serif;}
 
     #discoveryImages img {
         transition: box-shadow 0.3s ease-in-out;
-      }
+    }
       
-      #discoveryImages img:hover {
+    #discoveryImages img:hover {
         box-shadow: 0 0 40px 10px #ffc954;
-      }
-      
+    } 
 }
     
 body {

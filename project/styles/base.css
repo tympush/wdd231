@@ -1,0 +1,142 @@
+h1, h2, h3, h4 {font-family: Salsa, "Times New Roman", serif;}
+a {font-family: Comfortaa, "Georgia", serif; text-decoration: none;}
+p {font-family: Dekko Arial, sans-serif;}
+
+
+
+@media screen and (max-width: 1150px) {
+    
+    #logo img {
+        width:75px;
+        height:auto;
+        padding:10px
+    }
+    
+    #menu {
+        font-size:48px;
+        position:absolute;
+        right:10px;
+        top:20px;
+        z-index:10;
+        color:#000;
+        font-family:Montserrat
+    }
+    
+    #menu::before {
+        content:"☰";
+        position:absolute;
+        right:10px
+    }
+    
+    #menu.show::before {
+        content:"X"
+    }
+    
+    nav {
+        text-align:center;
+        max-height:0;
+        overflow:hidden;
+        transition:max-height .5s ease-in-out
+    }
+    
+    nav a {
+        margin:30px;
+        display:block;
+        color:white;
+        transition: color 1s ease;
+    }
+    
+    nav a:hover {
+        color:#fdc85d
+    }
+    
+    nav.show {
+        max-height:300px;
+    }
+
+    nav.show a{
+        color:#000
+    }
+}
+
+
+
+@media screen and (min-width: 1150px) {
+    #topbar {
+        display:flex
+    }
+    
+    #logo {
+        margin:20px
+    }
+    
+    #logo img {
+        width:100px;
+        height:auto;
+        transition:transform .5s ease
+    }
+    
+    #logo img:hover {
+        transform:scale(1.1)
+    }
+    
+    #title h1 {
+        font-size:44px
+    }
+    
+    #title p {
+        font-size:18px
+    }
+    
+    .navigation {
+        margin-left:auto;
+        align-self:flex-end;
+        display:flex
+    }
+    
+    .navigation a {
+        margin-right:20px;
+        padding:20px;
+        transition:transform .5s ease,color .5s ease;
+        color:#000;
+    }
+    
+    .navigation a:hover {
+        transform:scale(1.2);
+        color:#fdc85d
+    }   
+}
+
+
+
+body {
+    background-color:#f3df5b;
+}
+    
+header {
+    margin-bottom:20px
+}
+    
+#logtle {
+    display:flex
+}
+    
+#title h1 {
+    margin-bottom:0
+}
+    
+#title p {
+    margin-top:0
+}
+    
+.navigation a {
+    font-size:32px;
+}
+    
+.nav-link {
+    text-decoration:none
+}
+    
+.nav-link.active {
+    text-decoration:underline
+}
