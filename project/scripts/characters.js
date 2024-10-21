@@ -33,7 +33,7 @@ function displayHeroes(heroes, container, limit) {
         const heroDiv = document.createElement('div');
         heroDiv.classList.add('hero', 'slide');  // Add 'slide' class here
         heroDiv.innerHTML = `
-            <img src="${hero.images.lg}" alt="${hero.name}" loading="lazy">
+            <img src="${hero.images.lg}" alt="${hero.name}" loading="lazy" onerror="this.onerror=null; this.src='images/missing.webp';">
             <div class="hero-info">
                 <h3>${hero.name}</h3>
                 <p>Publisher: ${publisher}</p>
@@ -60,7 +60,7 @@ function displayVillains(villains, container, limit) {
         const villainDiv = document.createElement('div');
         villainDiv.classList.add('villain', 'slide');  // Add 'slide' class here
         villainDiv.innerHTML = `
-            <img src="${villain.images.lg}" alt="${villain.name}" loading="lazy">
+            <img src="${villain.images.lg}" alt="${villain.name}" loading="lazy" onerror="this.onerror=null; this.src='images/missing.webp';">
             <div class="villain-info">
                 <h3>${villain.name}</h3>
                 <p>Publisher: ${publisher}</p>
@@ -85,7 +85,7 @@ function displayHeroesWithDetails(heroes, container, limit) {
         const heroDiv = document.createElement('div');
         heroDiv.classList.add('hero');
         heroDiv.innerHTML = `
-            <img src="${hero.images.lg}" alt="${hero.name}" loading="lazy">
+            <img src="${hero.images.lg}" alt="${hero.name}" loading="lazy" onerror="this.onerror=null; this.src='images/missing.webp';">
             <div class="hero-info">
                 <h3>${hero.name}</h3>
                 <p>Full Name: ${fullName}</p>
@@ -112,7 +112,7 @@ function displayVillainsWithDetails(villains, container, limit) {
         const villainDiv = document.createElement('div');
         villainDiv.classList.add('villain');
         villainDiv.innerHTML = `
-            <img src="${villain.images.lg}" alt="${villain.name}" loading="lazy">
+            <img src="${villain.images.lg}" alt="${villain.name}" loading="lazy" onerror="this.onerror=null; this.src='images/missing.webp';">
             <div class="villain-info">
                 <h3>${villain.name}</h3>
                 <p>Full Name: ${fullName}</p>
