@@ -203,6 +203,12 @@ header::before, #footerBar::before {
     text-decoration:underline;
 }
 
+
+
+#footer{
+    
+}
+
 #heroBanner{
     width: 100%;
     height: auto;
@@ -213,6 +219,7 @@ header::before, #footerBar::before {
 
 #footerBar{
     padding: 20px;
+    margin: 0px;
 }
 
 footer a {
