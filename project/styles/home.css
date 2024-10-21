@@ -8,9 +8,11 @@ h2{
 }
 
 .hero img, .villain img {
-    width: 250px;
-    height: auto;
-    margin: 0 auto;
+    transition:transform .5s ease;
+}
+
+.hero img:hover, .villain img:hover {
+    transform:scale(1.1);
 }
 
 .hero h3, .villain h3, .hero p, .villain p {
@@ -21,8 +23,8 @@ h2{
     position: relative;
     background-color: #d52a30;
     border: 2px solid black;
-    padding: 10px;
-    margin: 10px;
+    padding: 10px 20px 20px 10px;
+    margin: 30px 10px 10px 15px;
     text-align: center;
     z-index: 1;
 }
@@ -42,7 +44,7 @@ h2{
 
 
 .slider{
-    height: 500px;
+    height: 600px;
     margin: auto;
     position: relative;
     width: 95%;
@@ -53,7 +55,7 @@ h2{
 
 .slide-track{
     display: flex;
-    width: calc(250px * 20);
+    width: calc(300px * 20);
     animation: scroll 40s linear infinite;
 }
 
@@ -66,15 +68,16 @@ h2{
         transform: translateX(0);
     }
     100%{
-        transform: translateX(calc(-250px * 10));
+        transform: translateX(calc(-300px * 10));
     }
 }
 
 .slide{
-    height: 500px;
-    width: 250px;
+    height: 600px;
+    width: 300px;
     align-items: center;
     padding: 15px;
+    margin: 20px;
 }
 
 .slide img{
