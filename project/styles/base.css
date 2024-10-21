@@ -203,7 +203,7 @@ header::before, #footerBar::before {
     text-decoration:underline;
 }
 
-#hero{
+#heroBanner{
     width: 100%;
     height: auto;
     display: block;

@@ -21,10 +21,12 @@
 
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/home.css">
 
     <script src="scripts/getdates.js" defer></script>
     <script src="scripts/hamburger.js" defer></script>
     <script src="scripts/characters.js" defer></script>
+    <script src="scripts/slideshow.js" defer></script>
 </head>
 
 <body>
@@ -52,13 +54,23 @@
     </header>
 
     <main>
-        <div id="heroRow"></div>
+        <div class="container">
+            <h2>Heroes</h2>
+            <div class="slider">
+                <div id="heroRow" class="track"></div>
+            </div>
+        </div>
 
-        <div id="villainRow"></div>
+        <div class="container">
+            <h2>Villains</h2>
+            <div class="slider">
+                <div id="villainRow" class="track"></div>
+            </div>
+        </div>
     </main>
 
     <footer>
-        <img id="hero" src="images/hero.webp" alt="super hero banner image" loading="lazy">
+        <img id="heroBanner" src="images/hero.webp" alt="super hero banner image" loading="lazy">
 
         <div id="footerBar">
             <div id="footerInfo">
