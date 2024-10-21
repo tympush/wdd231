@@ -55,6 +55,10 @@ p {font-family: Dekko Arial, sans-serif;}
     nav.show {
         max-height:300px;
     }
+
+    header img, #footerBar img {
+        transform:scale(1);
+    }
 }
 
 
@@ -72,6 +76,7 @@ p {font-family: Dekko Arial, sans-serif;}
         width:100px;
         height:auto;
         transition:transform .5s ease;
+        transform:scale(1);
     }
     
     #logo img:hover {
@@ -102,6 +107,21 @@ p {font-family: Dekko Arial, sans-serif;}
         transform:scale(1.2);
         color:#fdc85d;
     }   
+
+    footer a {
+        padding:10px;
+    }
+        
+    footer a img {
+        transition:transform .5s ease;
+        width:80px;
+        height:auto;
+        transform:scale(1);
+    }
+        
+    footer a img:hover {
+        transform:scale(1.15);
+    }
 }
 
 
@@ -110,13 +130,13 @@ body {
     background-color:#f3df5b;
 }
     
-header {
+header, #footerBar {
     margin-bottom: 20px;
     position: relative; /* Allow positioning of pseudo-element */
     background: var(--background-gradient); /* Base gradient */
 }
 
-header::before {
+header::before, #footerBar::before {
     content: ''; /* Required for pseudo-element */
     position: absolute; /* Position it over the header */
     top: 0;
@@ -155,4 +175,16 @@ header::before {
     
 .nav-link.active {
     text-decoration:underline;
+}
+
+#hero{
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+#footerBar{
+    padding: 20px;
 }
