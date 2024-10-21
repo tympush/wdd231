@@ -59,6 +59,20 @@ p {font-family: Dekko Arial, sans-serif;}
     header img, #footerBar img {
         transform:scale(1);
     }
+
+    footer p{
+        text-align: center;
+    }
+
+    #footerLinks {
+        display: flex;
+        justify-content: center;
+    }
+
+    footer a img {
+        width:60px;
+        height:auto;
+    }
 }
 
 
@@ -106,10 +120,18 @@ p {font-family: Dekko Arial, sans-serif;}
     .navigation a:hover {
         transform:scale(1.2);
         color:#fdc85d;
-    }   
+    }  
+    
+    #footerBar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 
-    footer a {
-        padding:10px;
+    #footerLinks {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
         
     footer a img {
@@ -187,4 +209,8 @@ header::before, #footerBar::before {
 
 #footerBar{
     padding: 20px;
+}
+
+footer a {
+    padding:10px;
 }
