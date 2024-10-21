@@ -15,6 +15,10 @@ p {font-family: Dekko Arial, sans-serif;}
         height:auto;
         padding:10px;
     }
+
+    #title{
+        margin-right: 100px;
+    }
     
     #menu {
         font-size:48px;
@@ -49,7 +53,7 @@ p {font-family: Dekko Arial, sans-serif;}
     }
     
     nav a:hover {
-        color:#fdc85d;
+        color:#f3df5b;
     }
     
     nav.show {
@@ -119,7 +123,7 @@ p {font-family: Dekko Arial, sans-serif;}
     
     .navigation a:hover {
         transform:scale(1.2);
-        color:#fdc85d;
+        color:#f3df5b;
     }  
     
     #footerBar{
