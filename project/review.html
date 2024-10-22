@@ -21,6 +21,7 @@
 
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/review.css">
 
     <script src="scripts/getdates.js" defer></script>
     <script src="scripts/hamburger.js" defer></script>
@@ -51,7 +52,25 @@
     </header>
 
     <main>
+        <form method="GET" action="thankyou.html" class="designOne">
+            <label>Comic Title: <input type="text" name="comic-title" required title="Comic Title"></label>
+            <label>Publisher: <input type="text" name="publisher" required title="Publisher"></label>
 
+            <label>Reviewer Username: <input type="text" name="username" autocomplete="username" title="Reviewer Username"></label>
+
+            <h3>Select Review Score:</h3>
+            <label class="radioText"><input type="radio" name="membership-level" value="1"> ★☆☆☆☆</label>
+            <label class="radioText"><input type="radio" name="membership-level" value="2"> ★★☆☆☆</label>
+            <label class="radioText"><input type="radio" name="membership-level" value="3"> ★★★☆☆</label>
+            <label class="radioText"><input type="radio" name="membership-level" value="4"> ★★★★☆</label>
+            <label class="radioText"><input type="radio" name="membership-level" value="5"> ★★★★★</label>
+
+            <label>Text Review: <textarea id="org-description" name="text-review" title="Text Review" rows="4" cols="50"></textarea></label>
+
+            <input type="hidden" name="form-timestamp" id="form-timestamp" value="">
+    
+            <input type="submit" value="Submit Review">
+        </form>
     </main>
 
     <footer>

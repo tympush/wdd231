@@ -1,0 +1,138 @@
+@media screen and (max-width: 1150px) {
+
+    h2{
+        font-size: 18px;
+    }
+
+    #infoHalf>div{
+        width: 90%;
+        max-width: 500px;
+    }
+
+    form input[type=text],
+    form input[type=tel],
+    form input[type=date],
+    form input[type=email],
+    form select,
+    form textarea {
+        width: 250px;
+    }
+}
+
+@media screen and (min-width: 1150px) {
+    main{
+        display: flex;
+    }
+
+    h2{
+        font-size: 22px;
+    }
+
+    form input[type=text],
+    form input[type=tel],
+    form input[type=date],
+    form input[type=email],
+    form select,
+    form textarea {
+        width: 320px;
+    }
+
+    #infoHalf>div{
+        width: 500px;
+    }
+}
+
+main{
+    justify-content: center;
+}
+
+main>div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px;
+}
+
+h2{
+    color: white;
+}
+
+form {
+    margin: 1rem 2%;
+}
+
+form label {
+    display: block;
+    font-size: .8rem;
+    color: #d0a23f;
+    padding: 10px;
+    font-size: 14px;
+}
+
+form h3 {
+    font-size: .9rem;
+    color: #619ae0;
+    margin: 1.5rem 0 .2rem 0;
+    padding: 10px;
+    font-size: 16px;
+}
+
+form input[type=text],
+form input[type=tel],
+form input[type=date],
+form input[type=email],
+form select,
+form textarea {
+    display: block;
+    margin: .1rem 0 1rem 0;
+    padding: .3rem;
+    border: 1px solid #999;
+    border-radius: 4px;
+    border-left-width: 5px;
+    border-left-color: #555;
+    font-size: 1rem;
+    color: #3D405B;
+}
+
+form input:required {
+    border-left-color: #d70000;
+}
+
+form input:focus {
+    border-left-color: black;
+    outline: none;
+}
+
+form input:required:valid {
+    border-left-color: green;
+}
+
+input[type="radio"] {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.radioText {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+}
+
+form input[type=submit] {
+    border: none;
+    text-align: center;
+    background-color: #f94449;
+    color: white;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 2rem 0;
+    font-size: 1.2rem;
+    -webkit-appearance: none;
+    appearance: none;
+    margin-left: 10px;
+}
+
+input:-webkit-autofill {
+    -webkit-text-fill-color: #3D405B;
+}
