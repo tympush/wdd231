@@ -21,6 +21,7 @@
 
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/characters.css">
 
     <script src="scripts/getdates.js" defer></script>
     <script src="scripts/hamburger.js" defer></script>
@@ -52,13 +53,19 @@
     </header>
 
     <main>
+        <h2>Heroes</h2>
         <div id="heroGrid"></div>
 
+        <h2>Villains</h2>
         <div id="villainGrid"></div>
     </main>
 
     <footer>
-        <img id="hero" src="images/hero.webp" alt="super hero banner image" loading="lazy">
+        <picture>
+            <source srcset="images/hero-large.webp" media="(min-width: 1280px)" width="1920" height="550" loading="lazy">
+            <source srcset="images/hero-medium.webp" media="(min-width: 720px)" width="1280" height="367" loading="lazy">
+            <img id="heroBanner" src="images/hero-small.webp" alt="super hero banner image" width="720" height="206" loading="lazy">
+        </picture>
 
         <div id="footerBar">
             <div id="footerInfo">

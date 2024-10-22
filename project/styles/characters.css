@@ -1,0 +1,63 @@
+h2{
+    text-align: center;
+    font-size: 38px;
+}
+
+/* Center the grid containers */
+#heroGrid, #villainGrid {
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); /* Auto-fit to available space */
+    gap: 20px; /* Space between grid items */
+    max-width: 1450px; /* Restrict maximum width of the grid container */
+    margin: 0 auto; /* Center the grid container horizontally */
+}
+
+/* Ensure each grid item has the same height */
+.hero, .villain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; /* Distribute space between image and text */
+    height: 100%; /* Ensures that items stretch to fill the grid cell */
+}
+
+/* Make the grid items take up the same height */
+.hero-info, .villain-info {
+    position: relative;
+    background-color: #d52a30;
+    border: 2px solid black;
+    margin: 30px 10px 10px 15px;
+    padding: 10px 20px 20px 10px;
+    text-align: center;
+    z-index: 1;
+    flex-grow: 1; /* Forces the text container to take up the remaining space */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers text content inside */
+}
+
+/* Border effect behind info boxes */
+.hero-info::before, .villain-info::before {
+    content: "";
+    position: absolute;
+    top: -7px;
+    left: -7px;
+    right: 7px;
+    bottom: 7px;
+    background-color: white;
+    border: 2px solid black;
+    z-index: -1;
+}
+
+/* Style and animation for images */
+.hero img, .villain img {
+    transition: transform 0.5s ease;
+    width: 220px;
+    height: auto;
+    margin: 0 auto; /* Ensure image stays centered within its flex container */
+}
+
+.hero img:hover, .villain img:hover {
+    transform: scale(1.1);
+}
