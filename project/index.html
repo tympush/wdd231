@@ -77,7 +77,11 @@
     </main>
 
     <footer>
-        <img id="heroBanner" src="images/hero.webp" alt="super hero banner image" loading="lazy">
+        <picture>
+            <source srcset="images/hero-large.webp" media="(min-width: 1280px)" width="1920" height="550" loading="lazy">
+            <source srcset="images/hero-medium.webp" media="(min-width: 720px)" width="1280" height="367" loading="lazy">
+            <img id="heroBanner" src="images/hero-small.webp" alt="super hero banner image" width="720" height="206" loading="lazy">
+        </picture>
 
         <div id="footerBar">
             <div id="footerInfo">
