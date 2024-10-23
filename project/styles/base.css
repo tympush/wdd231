@@ -3,8 +3,8 @@
 }
 
 h1, h2, h3, h4 {font-family: Salsa, "Times New Roman", serif;}
-a {font-family: Comfortaa, "Georgia", serif; text-decoration: none;}
-p {font-family: Dekko Arial, sans-serif;}
+a, input {font-family: Comfortaa, "Georgia", serif; text-decoration: none;}
+p, label {font-family: Dekko Arial, sans-serif;}
 
 
 

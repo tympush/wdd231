@@ -1,14 +1,4 @@
 @media screen and (max-width: 1150px) {
-
-    h2{
-        font-size: 18px;
-    }
-
-    #infoHalf>div{
-        width: 90%;
-        max-width: 500px;
-    }
-
     form input[type=text],
     form input[type=tel],
     form input[type=date],
@@ -20,10 +10,6 @@
 }
 
 @media screen and (min-width: 1150px) {
-    main{
-        display: flex;
-    }
-
     h2{
         font-size: 22px;
     }
@@ -36,13 +22,10 @@
     form textarea {
         width: 320px;
     }
-
-    #infoHalf>div{
-        width: 500px;
-    }
 }
 
 main{
+    display: flex;
     justify-content: center;
 }
 
@@ -53,10 +36,6 @@ main>div{
     margin: 30px;
 }
 
-h2{
-    color: white;
-}
-
 form {
     margin: 1rem 2%;
 }
@@ -64,14 +43,12 @@ form {
 form label {
     display: block;
     font-size: .8rem;
-    color: #d0a23f;
     padding: 10px;
     font-size: 14px;
 }
 
 form h3 {
     font-size: .9rem;
-    color: #619ae0;
     margin: 1.5rem 0 .2rem 0;
     padding: 10px;
     font-size: 16px;
@@ -107,6 +84,10 @@ form input:required:valid {
     border-left-color: green;
 }
 
+#radioDiv{
+    padding-bottom: 30px;
+}
+
 input[type="radio"] {
     width: 20px;
     height: 20px;
@@ -131,6 +112,11 @@ form input[type=submit] {
     -webkit-appearance: none;
     appearance: none;
     margin-left: 10px;
+    transition:color .5s ease;
+}
+
+form input[type=submit]:hover{
+    color:#f3df5b;
 }
 
 input:-webkit-autofill {

@@ -25,6 +25,7 @@
 
     <script src="scripts/getdates.js" defer></script>
     <script src="scripts/hamburger.js" defer></script>
+    <script src="scripts/review.js" defer></script>
 </head>
 
 <body>
@@ -58,14 +59,16 @@
 
             <label>Reviewer Username: <input type="text" name="username" autocomplete="username" title="Reviewer Username"></label>
 
-            <h3>Select Review Score:</h3>
-            <label class="radioText"><input type="radio" name="membership-level" value="1"> ★☆☆☆☆</label>
-            <label class="radioText"><input type="radio" name="membership-level" value="2"> ★★☆☆☆</label>
-            <label class="radioText"><input type="radio" name="membership-level" value="3"> ★★★☆☆</label>
-            <label class="radioText"><input type="radio" name="membership-level" value="4"> ★★★★☆</label>
-            <label class="radioText"><input type="radio" name="membership-level" value="5"> ★★★★★</label>
+            <div id="radioDiv">
+                <h3>Select Review Score:</h3>
+                <label class="radioText"><input type="radio" name="membership-level" value="1"> ★☆☆☆☆</label>
+                <label class="radioText"><input type="radio" name="membership-level" value="2"> ★★☆☆☆</label>
+                <label class="radioText"><input type="radio" name="membership-level" value="3"> ★★★☆☆</label>
+                <label class="radioText"><input type="radio" name="membership-level" value="4"> ★★★★☆</label>
+                <label class="radioText"><input type="radio" name="membership-level" value="5"> ★★★★★</label>
+            </div>
 
-            <label>Text Review: <textarea id="org-description" name="text-review" title="Text Review" rows="4" cols="50"></textarea></label>
+            <label id="textLabel">Text Review: <textarea name="text-review" title="Text Review" rows="4" cols="50"></textarea></label>
 
             <input type="hidden" name="form-timestamp" id="form-timestamp" value="">
     

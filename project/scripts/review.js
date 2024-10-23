@@ -1,0 +1,1 @@
+document.getElementById('form-timestamp').value = new Date().toISOString();
