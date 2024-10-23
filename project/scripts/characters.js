@@ -3,7 +3,7 @@ const villainUrl = 'https://superhero-search.p.rapidapi.com/api/villains';
 const options = {
     method: 'GET',
     headers: {
-        'x-rapidapi-key': '916085f96cmsh2fe27f95f6c9037p1d7685jsnd8555a82e1a9',  // Your actual API key
+        'x-rapidapi-key': '916085f96cmsh2fe27f95f6c9037p1d7685jsnd8555a82e1a9',
         'x-rapidapi-host': 'superhero-search.p.rapidapi.com'
     }
 };

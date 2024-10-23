@@ -36,7 +36,7 @@ showInfo.innerHTML = `
     <p><strong>Comic Title:</strong> ${show("comic-title")}</p>
     <p><strong>Publisher:</strong> ${show("publisher")}</p>
     <p><strong>Reviewer Username:</strong> ${show("username")}</p>
-    <p><strong>Review Score:</strong> ${show("membership-level")}</p>
+    <p><strong>Review Score:</strong> ${show("score")} star</p>
     <p><strong>Text Review:</strong> ${show("text-review")}</p>
     <p><strong>Time of Submission:</strong> ${formatTimestamp(show("form-timestamp"))}</p>
 `;
