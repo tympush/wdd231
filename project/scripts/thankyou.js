@@ -31,7 +31,10 @@ function formatTimestamp(timestamp) {
     return `${year}-${month}-${day} ${hours}:${minutes}:${seconds}`;
 }
 
-const showInfo = document.querySelector('#results')
+// Retrieve the total number of reviews from localStorage
+const reviewCount = localStorage.getItem('reviewCount') || 0; // Get the count from localStorage
+
+const showInfo = document.querySelector('#results');
 showInfo.innerHTML = `
     <p><strong>Comic Title:</strong> ${show("comic-title")}</p>
     <p><strong>Publisher:</strong> ${show("publisher")}</p>
@@ -39,4 +42,5 @@ showInfo.innerHTML = `
     <p><strong>Review Score:</strong> ${show("score")} star</p>
     <p><strong>Text Review:</strong> ${show("text-review")}</p>
     <p><strong>Time of Submission:</strong> ${formatTimestamp(show("form-timestamp"))}</p>
+    <p><strong>Total Reviews Submitted:</strong> ${reviewCount}</p> <!-- New line to display review count -->
 `;
