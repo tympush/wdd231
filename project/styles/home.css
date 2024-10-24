@@ -1,4 +1,8 @@
 @media screen and (max-width: 1150px){
+    #topInfoBox{
+        margin: 40px 10px 120px 10px;
+    }
+    
     #infoTextPart{
         grid-row: 2/3;
         text-align: center;
@@ -37,12 +41,23 @@
     #characterButton:hover{
         color:#f3df5b;
     }
+
+    .slide img{
+        width: 90%;
+        height: auto;
+        max-width: 220px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        margin-top: 60px;
+    }
 }
 
 @media screen and (min-width: 1150px){
     #topInfoBox{
         grid-template-columns: 1fr 1fr;
         padding: 40px;
+        margin: 40px 40px 120px 40px;
     }
 
     #infoTextPart p {
@@ -72,13 +87,88 @@
         transform:scale(1.2);
         color:#f3df5b;
     }
+
+
+
+    #heroRow, #villainRow{
+        display: flex;
+    }
+    
+    .hero img, .villain img {
+        transition:transform .5s ease;
+    }
+    
+    .hero img:hover, .villain img:hover {
+        transform:scale(1.1);
+    }
+
+    .slider{
+        height: 600px;
+        margin: auto;
+        position: relative;
+        width: 85%;
+        display: grid;
+        place-items: center;
+        overflow: hidden;
+    }
+    
+    .slide-track{
+        display: flex;
+        width: calc(300px * 20);
+        animation: scroll 30s linear infinite;
+    }
+    
+    .slide-track:hover{
+        animation-play-state: paused;
+    }
+    
+    @keyframes scroll{
+        0%{
+            transform: translateX(0);
+        }
+        100%{
+            transform: translateX(calc(-300px * 10));
+        }
+    }
+    
+    .slide{
+        height: 600px;
+        width: 300px;
+        align-items: center;
+        padding: 15px;
+        margin: 20px;
+    }
+
+    .slider::before,
+    .slider::after{
+        background: linear-gradient(to right, rgba(243,223,91,1) 0%, rgba(255,255,255,0) 100%);
+        content: '';
+        height: 100%;
+        position: absolute;
+        width: 15%;
+        z-index: 2;
+    }
+
+    .slider::before{
+        left: 0;
+        top: 0;
+    }
+
+    .slider::after{
+        right: 0;
+        top: 0;
+        transform: rotateZ(180deg);
+    }
+
+    .slide img{
+        width: 100%;
+    }
 }
 
 #topInfoBox{
     display: grid;
     background-color: #8cba1a;
     border: 4px solid black;
-    margin: 40px 40px 120px 40px;
 }
 
 #infoTextPart p {
@@ -111,18 +201,6 @@ h2{
     font-size: 38px;
 }
 
-#heroRow, #villainRow{
-    display: flex;
-}
-
-.hero img, .villain img {
-    transition:transform .5s ease;
-}
-
-.hero img:hover, .villain img:hover {
-    transform:scale(1.1);
-}
-
 .hero h3, .villain h3, .hero p, .villain p {
     text-align: center;
 }
@@ -147,70 +225,6 @@ h2{
     background-color: white;
     border: 2px solid black;
     z-index: -1;
-}
-
-
-
-.slider{
-    height: 600px;
-    margin: auto;
-    position: relative;
-    width: 85%;
-    display: grid;
-    place-items: center;
-    overflow: hidden;
-}
-
-.slide-track{
-    display: flex;
-    width: calc(300px * 20);
-    animation: scroll 30s linear infinite;
-}
-
-.slide-track:hover{
-    animation-play-state: paused;
-}
-
-@keyframes scroll{
-    0%{
-        transform: translateX(0);
-    }
-    100%{
-        transform: translateX(calc(-300px * 10));
-    }
-}
-
-.slide{
-    height: 600px;
-    width: 300px;
-    align-items: center;
-    padding: 15px;
-    margin: 20px;
-}
-
-.slide img{
-    width: 100%;
-}
-
-.slider::before,
-.slider::after{
-    background: linear-gradient(to right, rgba(243,223,91,1) 0%, rgba(255,255,255,0) 100%);
-    content: '';
-    height: 100%;
-    position: absolute;
-    width: 15%;
-    z-index: 2;
-}
-
-.slider::before{
-    left: 0;
-    top: 0;
-}
-
-.slider::after{
-    right: 0;
-    top: 0;
-    transform: rotateZ(180deg);
 }
 
 
