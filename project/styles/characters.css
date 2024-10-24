@@ -2,16 +2,34 @@
     #infoTextPart{
         grid-row: 2/3;
         text-align: center;
+        padding: 0px 20px 0px 20px;
     }
 
     #topInfoBox img{
         grid-row: 1/2;
+    }
+
+    #infoTextPart p {
+        font-size: 16px;
+    }
+
+    h4{
+        font-size: 24px;
     }
 }
 
 @media screen and (min-width: 1150px){
     #topInfoBox{
         grid-template-columns: 1fr 1fr;
+        padding: 40px;
+    }
+
+    #infoTextPart p {
+        font-size: clamp(20px, 1.2vw, 26px); /* Minimum size of 18px, scales with viewport width, max size of 26px */
+    }
+
+    h4{
+        font-size: 30px;
     }
 }
 
@@ -22,16 +40,7 @@
     margin: 40px 40px 120px 40px;
 }
 
-#infoTextPart{
-    padding: 40px;
-}
-
-h4{
-    font-size: 30px;
-}
-
 #infoTextPart p {
-    font-size: clamp(20px, 1.2vw, 26px); /* Minimum size of 18px, scales with viewport width, max size of 26px */
     padding-bottom: 30px;
 }
 
