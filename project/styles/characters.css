@@ -16,6 +16,22 @@
     h4{
         font-size: 24px;
     }
+
+    #heroGrid, #villainGrid {
+        display: block;
+        max-width: 100%;
+        margin: 0 20px;
+    }
+
+    .hero img, .villain img {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+
+    .hero, .villain {
+        margin-bottom: 20px;
+    }
 }
 
 @media screen and (min-width: 1150px){
@@ -25,11 +41,36 @@
     }
 
     #infoTextPart p {
-        font-size: clamp(20px, 1.2vw, 26px); /* Minimum size of 18px, scales with viewport width, max size of 26px */
+        font-size: clamp(20px, 1.2vw, 26px);
     }
 
     h4{
         font-size: 30px;
+    }
+
+    #heroGrid, #villainGrid {
+        display: grid;
+        place-items: center;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 20px;
+        max-width: 1450px;
+        margin: 0 auto;
+    }
+
+    .hero, .villain {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        height: 100%;
+    }
+
+    .hero img, .villain img {
+        transition: transform 0.5s ease;
+    }
+    
+    .hero img:hover, .villain img:hover {
+        transform: scale(1.1);
     }
 }
 
@@ -56,26 +97,6 @@ h2{
     font-size: 38px;
 }
 
-/* Center the grid containers */
-#heroGrid, #villainGrid {
-    display: grid;
-    place-items: center;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); /* Auto-fit to available space */
-    gap: 20px; /* Space between grid items */
-    max-width: 1450px; /* Restrict maximum width of the grid container */
-    margin: 0 auto; /* Center the grid container horizontally */
-}
-
-/* Ensure each grid item has the same height */
-.hero, .villain {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between; /* Distribute space between image and text */
-    height: 100%; /* Ensures that items stretch to fill the grid cell */
-}
-
-/* Make the grid items take up the same height */
 .hero-info, .villain-info {
     position: relative;
     background-color: #d52a30;
@@ -84,13 +105,12 @@ h2{
     padding: 10px 20px 20px 10px;
     text-align: center;
     z-index: 1;
-    flex-grow: 1; /* Forces the text container to take up the remaining space */
+    flex-grow: 1;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Centers text content inside */
+    justify-content: center;
 }
 
-/* Border effect behind info boxes */
 .hero-info::before, .villain-info::before {
     content: "";
     position: absolute;
@@ -103,14 +123,9 @@ h2{
     z-index: -1;
 }
 
-/* Style and animation for images */
 .hero img, .villain img {
-    transition: transform 0.5s ease;
     width: 220px;
     height: auto;
-    margin: 0 auto; /* Ensure image stays centered within its flex container */
-}
-
-.hero img:hover, .villain img:hover {
-    transform: scale(1.1);
+    max-width: 95%;
+    margin: 0 auto;
 }
