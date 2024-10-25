@@ -25,7 +25,7 @@
 
     <script src="scripts/getdates.js" defer></script>
     <script src="scripts/hamburger.js" defer></script>
-    <script type="module" src="scripts/characters.js" defer></script>
+    <script type="module" src="scripts/characters.js" async></script>
 </head>
 
 <body>
@@ -70,8 +70,8 @@
 
     <footer>
         <picture>
-            <source srcset="images/hero-large.webp" media="(min-width: 1280px)" width="1920" height="550" loading="lazy">
-            <source srcset="images/hero-medium.webp" media="(min-width: 720px)" width="1280" height="367" loading="lazy">
+            <source srcset="images/hero-large.webp" media="(min-width: 1280px)" width="1920" height="550">
+            <source srcset="images/hero-medium.webp" media="(min-width: 720px)" width="1280" height="367">
             <img id="heroBanner" src="images/hero-small.webp" alt="super hero banner image" width="720" height="206" loading="lazy">
         </picture>
 
